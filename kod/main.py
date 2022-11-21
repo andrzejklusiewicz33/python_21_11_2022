@@ -1,0 +1,4 @@
+#dodatki:
+#dekoratory
+#obiektowość
+#Faker
