@@ -52,3 +52,46 @@
 # print(80/pow(1.76,2))
 # print(round(80/pow(1.76,2),2))
 # print(80/(1.76*1.76))
+#
+# weight=float(input('podaj masę:\n'))
+# height=float(input('podaj wzrost:\n'))
+# #bmi=round(weight/pow(height,2),2)
+# bmi=round(weight/(height*height),2)
+# print(bmi)
+
+#przerwa do 10:23
+
+# x=2
+# if x==1:
+#     print('jeden')
+#     print('.....')
+# print('koniec')
+#
+# x=2
+# if x==1:
+#     print('jeden')
+#     print('.....')
+# else:
+#     print('nie jeden...')
+# print('koniec')
+
+
+# x=0
+# if x==1:
+#     print('jeden')
+# elif x==2:
+#     print('dwa')
+# elif x==3:
+#     print('trzy')
+# else:
+#     print('poza zakresem')
+#
+# if 1==1:
+#     print('to jasne')
+#
+# print('koniec')
+
+
+#3. Niech użytkownik poda jakąś liczbę. Jeśli poda dodatnią to chcemy wyświetlić
+# tę wartość z informacją "wartość dodatnia", jeśli zero to wyświetlamy z informacją "równe zero",
+# jeśli ujemna to wyświetlamy "wartość ujemna".
