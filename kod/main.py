@@ -294,3 +294,28 @@
 
 #9. Napisz pętlę while która będzie wyświetlała kolejne potęgi liczby 2 aż wartość
 # potęgi nie przekroczy wartości podanej przez użytkownika
+#
+# max=float(input('podaj max:\n'))
+# wynik=0
+# x=0
+# while wynik<=max:
+#    x+=1
+#    wynik=pow(2,x)
+#    print(wynik)
+#
+#
+# max=float(input('podaj max:\n'))
+# wynik=0
+# x=0
+# while wynik<=max:
+#    print(wynik)
+#    x+=1
+#    wynik=pow(2,x)
+
+# import random
+# print(random.random())
+# print(random.randint(1,100))
+
+#10. Napisz program który będzie dodawał kolejne losowe wartości z zakresu
+#od 1 do 10 do zmiennej suma, tak dlugo az suma nie osiagnie wartosci wiekszej od
+# wartosci podanej przez uzytkownika
