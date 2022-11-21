@@ -390,7 +390,7 @@
 
 # calosc=open('tadzio.txt',encoding='utf-8').read()
 # print(calosc.replace('a','X'))
-
+print('cośtam')
 #13. Napisz program który zliczy ilość wystąpień małej lub dużej wersji ciagu tekstowego
 # podanego przez użytkownika w pliku którego nazwę również poda użytkownik.
 
@@ -405,3 +405,29 @@
  #  linie w których znalazła poszukiwaną frazę wraz z numerem linii. Wyszukiwarka po
  #    odebraniu danych od uzyszkodnika powinna wyswietlic jakiej frazy
  #  i  w jakim pliku szuka. Wyszukiwarka powinna być nieczula na wielkosc liter.
+#
+# szukane=input('podaj szukaną frazę:\n')
+# plik=input('podaj nazwę pliku:\n')
+# x=0
+# for linia in open(plik,encoding='utf-8'):
+#     x+=1
+#     if szukane.lower() in linia.lower():
+#         print(x,linia.strip())
+#
+#
+
+#pandas
+
+# tekst='siała baba mak nie wiedziala jak'
+# print(tekst)
+# print(tekst[0:10])
+# print(tekst[3:10:2])
+
+
+#15. Napisz program który będzie od uzytkownika przyjmowal nazwę pliku z kodem pythona.
+# Program ma wyświetlić wszystkie linie które nie są w całości komentarzami wraz z numerami tych linii w pliku
+
+print('dupa') #komentarz
+#komentarz
+    #komentarz
+
