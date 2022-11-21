@@ -95,3 +95,27 @@
 #3. Niech użytkownik poda jakąś liczbę. Jeśli poda dodatnią to chcemy wyświetlić
 # tę wartość z informacją "wartość dodatnia", jeśli zero to wyświetlamy z informacją "równe zero",
 # jeśli ujemna to wyświetlamy "wartość ujemna".
+#
+# def funkcja(x):
+#     print(x)
+#
+# funkcja(input('podaj coś:\n'))
+# funkcja(111111)
+
+#
+# some_number=float(input('dej liczbę:\n'))
+# if some_number<0:
+#     print(f'{some_number} jest ujemne')
+# elif some_number>0:
+#     print(f'{some_number} jest dodatnie')
+# else:
+#     print(f'{some_number} jest zerem')
+
+
+#4. Rozbuduj swój program do bmi w taki sposob by poza wyswietleniem obliczonego bmi
+#  wyświetlił nam również odpowiedni opis wg skali z Wikipedii.
+
+weight=float(input('podaj masę:\n'))
+height=float(input('podaj wzrost:\n'))
+bmi=round(weight/pow(height,2),2)
+print(bmi)
