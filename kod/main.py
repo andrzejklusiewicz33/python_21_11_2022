@@ -187,3 +187,30 @@
 # print(suma)
 
 #5. Wyświetl 20 kolejnych potęg liczby 2
+#
+# x=0
+# for e in range(1,21):
+#     x=e*0.5
+#     print(x)
+#
+#
+# for p in range(1,21):
+#     print(p,pow(2,p))
+
+# for x in range(-10,11):
+#     if x<0:
+#         print(f'ujemna {x}')
+#     elif x==0:
+#         print(f'zero {x}')
+#     else:
+#         print(f'dodatnia {x}')
+
+
+#6. Wydrukuj liczby w zakresie 1-100 wypisujac obok czy dana liczba jest
+#  parzysta czy nieparzysta
+#
+# print(11%2)
+# if 11%2==0:
+#     print('parzysta')
+# else:
+#     print('nieparzysta')
