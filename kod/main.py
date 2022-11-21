@@ -1,7 +1,7 @@
-#dodatki:
-#dekoratory
-#obiektowość
-#Faker
+# dodatki:
+# dekoratory
+# obiektowość
+# Faker
 # print("hello")
 # print('hello')
 # print("Mc'Donalds")
@@ -11,11 +11,11 @@
 # print(x,type(x))
 # x=1.3
 # print(x,type(x))
-#x='nietoperz'
-#print('x='+x)
-#x=10
-#print('x='+x)
-#print('x='+str(x))
+# x='nietoperz'
+# print('x='+x)
+# x=10
+# print('x='+x)
+# print('x='+str(x))
 # x=10
 # y=66
 # print("x={} y={}".format(x,99))
@@ -28,17 +28,17 @@
 # #print(x/3)
 # print(type(x))
 
-#print('hajs '*100)
+# print('hajs '*100)
 
-#x=int(input('podaj x:\n'))
+# x=int(input('podaj x:\n'))
 # x=float(  input('podaj x:\n')    )
 # print(type(x))
 # print(x/3)
 
-#1. Napisz program który przyjmie od uzyszkodnika jego imie oraz nazwisko, a nastepnie
-#wyswietli komunikat typu "Witaj Andrzej Klusiewicz!"
-#PEP8
-#import this
+# 1. Napisz program który przyjmie od uzyszkodnika jego imie oraz nazwisko, a nastepnie
+# wyswietli komunikat typu "Witaj Andrzej Klusiewicz!"
+# PEP8
+# import this
 # first_name=input('podaj imię:\n')
 # last_name=input('podaj nazwisko:\n')
 # print("Witaj "+first_name+" "+last_name+"!")
@@ -46,7 +46,7 @@
 # print(f'Witaj {first_name} {last_name}!')
 #
 
-#2. BMI= masa/(wzrost*wzrost) . Napisz program który odbierze od użytkownika jego masę
+# 2. BMI= masa/(wzrost*wzrost) . Napisz program który odbierze od użytkownika jego masę
 # w kilogramach i wzrost w metrach, wyliczy i wypisze BMI.
 
 # print(80/pow(1.76,2))
@@ -59,7 +59,7 @@
 # bmi=round(weight/(height*height),2)
 # print(bmi)
 
-#przerwa do 10:23
+# przerwa do 10:23
 
 # x=2
 # if x==1:
@@ -92,7 +92,7 @@
 # print('koniec')
 
 
-#3. Niech użytkownik poda jakąś liczbę. Jeśli poda dodatnią to chcemy wyświetlić
+# 3. Niech użytkownik poda jakąś liczbę. Jeśli poda dodatnią to chcemy wyświetlić
 # tę wartość z informacją "wartość dodatnia", jeśli zero to wyświetlamy z informacją "równe zero",
 # jeśli ujemna to wyświetlamy "wartość ujemna".
 #
@@ -112,7 +112,7 @@
 #     print(f'{some_number} jest zerem')
 
 
-#4. Rozbuduj swój program do bmi w taki sposob by poza wyswietleniem obliczonego bmi
+# 4. Rozbuduj swój program do bmi w taki sposob by poza wyswietleniem obliczonego bmi
 #  wyświetlił nam również odpowiedni opis wg skali z Wikipedii.
 #
 # weight=float(input('podaj masę:\n'))
@@ -186,7 +186,7 @@
 #     suma+=x
 # print(suma)
 
-#5. Wyświetl 20 kolejnych potęg liczby 2
+# 5. Wyświetl 20 kolejnych potęg liczby 2
 #
 # x=0
 # for e in range(1,21):
@@ -206,7 +206,7 @@
 #         print(f'dodatnia {x}')
 
 
-#6. Wydrukuj liczby w zakresie 1-100 wypisujac obok czy dana liczba jest
+# 6. Wydrukuj liczby w zakresie 1-100 wypisujac obok czy dana liczba jest
 #  parzysta czy nieparzysta
 #
 # print(11%2)
@@ -222,13 +222,13 @@
 #     else:
 #         print(f'{x} jest nieparzyste')
 
-#7. Napisz symulator lokaty. Symulator ma przyjmować przez zmienne:
-  # - kwotę lokaty
-  # - oprocentowanie w skali roku
-  # - ilość miesięcy na jaką zakladamy lokatę
-  # Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
-  # oraz ile mamy aktualnie zgromadzone na koncie po doliczeniu odsetek.
-  # Kapitalizacja comiesięczna
+# 7. Napisz symulator lokaty. Symulator ma przyjmować przez zmienne:
+# - kwotę lokaty
+# - oprocentowanie w skali roku
+# - ilość miesięcy na jaką zakladamy lokatę
+# Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
+# oraz ile mamy aktualnie zgromadzone na koncie po doliczeniu odsetek.
+# Kapitalizacja comiesięczna
 
 
 # konto=100000
@@ -280,7 +280,7 @@
 #    x+=1
 #    suma+=x
 
-#8. Napisz korzystajac z petli while program który wyświetli
+# 8. Napisz korzystajac z petli while program który wyświetli
 # 10 kolejnych potęg liczby 2.
 
 #
@@ -290,9 +290,9 @@
 #     print(x,pow(2,x))
 #
 
-#przerwa do 11:39
+# przerwa do 11:39
 
-#9. Napisz pętlę while która będzie wyświetlała kolejne potęgi liczby 2 aż wartość
+# 9. Napisz pętlę while która będzie wyświetlała kolejne potęgi liczby 2 aż wartość
 # potęgi nie przekroczy wartości podanej przez użytkownika
 #
 # max=float(input('podaj max:\n'))
@@ -316,8 +316,8 @@
 # print(random.random())
 # print(random.randint(1,100))
 
-#10. Napisz program który będzie dodawał kolejne losowe wartości z zakresu
-#od 1 do 10 do zmiennej suma, tak dlugo az suma nie osiagnie wartosci wiekszej od
+# 10. Napisz program który będzie dodawał kolejne losowe wartości z zakresu
+# od 1 do 10 do zmiennej suma, tak dlugo az suma nie osiagnie wartosci wiekszej od
 # wartosci podanej przez uzytkownika
 
 # import random
@@ -350,7 +350,7 @@
 # print(tekst.count('a'))
 # print(tekst.lower().count('a'))
 
-#11. Napisz program który przyjmie od użyszkodnika ciąg tekstowy a następnie usunie z
+# 11. Napisz program który przyjmie od użyszkodnika ciąg tekstowy a następnie usunie z
 # niego znaki ,.!? i wyświetli powiększony do dużych liter na konsoli
 #
 # tekst='siala baba mak'
@@ -377,7 +377,7 @@
 # for linia in open('tadzio.txt',encoding='utf-8'):
 #     print(len(linia.strip()),linia.strip())
 
-#12. Napisz program który wyświetli na konsoli niepuste linie z pliku tekstowego którego nazwę poda użytkownik
+# 12. Napisz program który wyświetli na konsoli niepuste linie z pliku tekstowego którego nazwę poda użytkownik
 #
 # for linia in open('tadzio.txt',encoding='utf-8'):
 #     if len(linia.strip())>0:
@@ -390,8 +390,8 @@
 
 # calosc=open('tadzio.txt',encoding='utf-8').read()
 # print(calosc.replace('a','X'))
-#print('cośtam')
-#13. Napisz program który zliczy ilość wystąpień małej lub dużej wersji ciagu tekstowego
+# print('cośtam')
+# 13. Napisz program który zliczy ilość wystąpień małej lub dużej wersji ciagu tekstowego
 # podanego przez użytkownika w pliku którego nazwę również poda użytkownik.
 
 # nazwa_pliku=input('podaj nazwę pliku:\n')
@@ -400,11 +400,11 @@
 # print(f'ilosc_wystapien={ilosc_wystapien}')
 #
 
-#14. Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika
- # poszukiwaną frazę, oraz nazwę pliku. Wyszukiwarka powinna wyświetlić
- #  linie w których znalazła poszukiwaną frazę wraz z numerem linii. Wyszukiwarka po
- #    odebraniu danych od uzyszkodnika powinna wyswietlic jakiej frazy
- #  i  w jakim pliku szuka. Wyszukiwarka powinna być nieczula na wielkosc liter.
+# 14. Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika
+# poszukiwaną frazę, oraz nazwę pliku. Wyszukiwarka powinna wyświetlić
+#  linie w których znalazła poszukiwaną frazę wraz z numerem linii. Wyszukiwarka po
+#    odebraniu danych od uzyszkodnika powinna wyswietlic jakiej frazy
+#  i  w jakim pliku szuka. Wyszukiwarka powinna być nieczula na wielkosc liter.
 #
 # szukane=input('podaj szukaną frazę:\n')
 # plik=input('podaj nazwę pliku:\n')
@@ -416,7 +416,7 @@
 #
 #
 
-#pandas
+# pandas
 
 # tekst='siała baba mak nie wiedziala jak'
 # print(tekst)
@@ -424,12 +424,12 @@
 # print(tekst[3:10:2])
 
 
-#15. Napisz program który będzie od uzytkownika przyjmowal nazwę pliku z kodem pythona.
+# 15. Napisz program który będzie od uzytkownika przyjmowal nazwę pliku z kodem pythona.
 # Program ma wyświetlić wszystkie linie które nie są w całości komentarzami wraz z numerami tych linii w pliku
 
-#print('dupa') #komentarz
-#komentarz
-    #komentarz
+# print('dupa') #komentarz
+# komentarz
+# komentarz
 
 # znak!='#'
 # znak<>'#'
@@ -441,7 +441,7 @@
 #     if len(linia.strip())>0 and linia.strip()[0:1]!='#':
 #         print(x,linia.strip())
 
-#PRZERWA OBIADOWA DO 13:25
+# PRZERWA OBIADOWA DO 13:25
 #
 # lista=[1,'dżem pomarańczowy','koza',4]
 # #lista=[]
@@ -452,8 +452,8 @@
 # for element in lista:
 #     print(element)
 
-#16. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
-#Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
+# 16. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
+# Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
 #
 # potegi=[]
 # for x in range(1,11):
@@ -517,5 +517,30 @@
 # suma.append(druga_lista)
 # print(suma)
 
-#17.Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
+# 17.Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
 # Połącz te dwie listy do jednej i wyswietl na konsoli (extend albo *lista)
+
+
+# import random
+#
+# lista1 = []
+# lista2 = []
+# for x in range(10):
+#     lista1.append(random.randint(1, 10))
+#     lista2.append(random.randint(1, 10))
+# print(lista1)
+# print(lista2)
+# suma=[*lista1,*lista2]
+# print(suma)
+# lista1.extend(lista2)
+# print(lista1)
+#
+# lista=[]
+# lista.append([2,4])
+# lista.append([3,8])
+# print(lista)
+# print(lista[1])
+# print(lista[1][1])
+
+#18. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
+# Kazdy taki element ma zawierac numer potegi oraz wartosc tej potegi dla liczby 2.
