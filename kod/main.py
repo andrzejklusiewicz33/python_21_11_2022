@@ -319,3 +319,40 @@
 #10. Napisz program który będzie dodawał kolejne losowe wartości z zakresu
 #od 1 do 10 do zmiennej suma, tak dlugo az suma nie osiagnie wartosci wiekszej od
 # wartosci podanej przez uzytkownika
+
+# import random
+# max=float(input('podaj max wartość:\n'))
+# suma=0
+# while suma<max:
+#     suma+=random.randint(1,10)
+#     print(suma)
+#
+# lista=[1,2,3,4,5,'nietoperz']
+#
+# for e in lista:
+#     print(e)
+
+# tekst='siała BABA mak i dostała 10 lat bo nie płaciła VAT'
+# # print(tekst)
+# # print(tekst.upper())
+# # print(tekst.lower())
+# # print(tekst.title())
+# # print(tekst.replace('a','X'))
+# # print(tekst.lower().replace('a','X'))
+# # print(len(tekst))
+# # lista=[1,2,3,4,5]
+# # print(len(lista))
+# # szukane=input('podaj czego szukasz:\n')
+# # if szukane.lower() in tekst.lower():
+# #     print('jest')
+# # else:
+# #     print('nie ma')
+# print(tekst.count('a'))
+# print(tekst.lower().count('a'))
+
+#11. Napisz program który przyjmie od użyszkodnika ciąg tekstowy a następnie usunie z
+# niego znaki ,.!? i wyświetli powiększony do dużych liter na konsoli
+#
+# tekst='siala baba mak'
+# tekst=tekst.upper()
+# print(tekst)
