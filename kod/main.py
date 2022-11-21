@@ -625,7 +625,7 @@
 # lista=linia.split(';')
 # print(lista[2].upper())
 
-#21. Napisz program który z pliku dane.csv wyświetli powiekszone imiona i nazwiska oraz wzrost i masę
+# 21. Napisz program który z pliku dane.csv wyświetli powiekszone imiona i nazwiska oraz wzrost i masę
 #
 # for linia in open('dane.csv',encoding='utf-8'):
 #     lista=linia.strip().split(';')
@@ -633,7 +633,7 @@
 #     #lista = linia.split(';')
 #     print(lista[1].upper(),lista[2].upper(),lista[3],lista[4])
 
-#22. Korzystajac z list skladanych zaladuj do listy zawartosc pliku dane.csv
+# 22. Korzystajac z list skladanych zaladuj do listy zawartosc pliku dane.csv
 # w taki sposób   by linie oczyścic z bialych znaków i rozbić na listy.
 # Każdy z elementów listy sam   powinien byc listą. Następnie przeiteruj po wyniku
 # i wyświetl wszystkie elementy listy  linia po linii.
@@ -662,7 +662,7 @@
 #     print(l)
 #
 
-#23. Dla każdego wpisu w pliku dane.csv wyświetl na konsoli dane o
+# 23. Dla każdego wpisu w pliku dane.csv wyświetl na konsoli dane o
 # id, imieniu, nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
 
 # lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
@@ -692,7 +692,7 @@
 # for i in range(1,11):
 #     suma+=i
 
-#przerwa do 15:09
+# przerwa do 15:09
 
 # lista=[3,2,1,7,6,4,2,1]
 # druga=sorted(lista)
@@ -735,5 +735,113 @@
 # print(lista.sort())
 # print(sorted(lista))
 
-#24. Wygeneruj listę 10 elementów o losowej wartości liczbowej, posortuj listę
+# 24. Wygeneruj listę 10 elementów o losowej wartości liczbowej, posortuj listę
 # i wyświetl jej zawartość linia po linii
+#
+# import random
+# print(round(random.random()*100000))
+#
+# import random
+# lista=[random.randint(1,10) for _ in range(10)]
+# print(lista)
+# lista.sort()
+# print(lista)
+# for e in lista:
+#     print(e)
+
+
+# import random
+# lista=[random.randint(1,10) for _ in range(10)]
+# print(lista)
+# for e in sorted(lista):
+#     print(e)
+#
+# import random
+# lista=sorted([random.randint(1,10) for e in range(10)])
+# print(lista)
+# for e in lista:
+#     print(e)
+
+# for _ in range(1,11):
+#     print('dupa')
+
+# lista = [
+#     [1, 'B'],
+#     [3, 'A'],
+#     [2, 'C']
+# ]
+#
+# lista.sort()
+# print(lista)
+#
+# import operator
+# lista = [
+#     [1, 'B'],
+#     [3, 'A'],
+#     [2, 'C']
+# ]
+# lista.sort(key=operator.itemgetter(1))
+# print(lista)
+
+
+
+# import operator
+# lista = [
+#     [1, 'B'],
+#     [3, 'A'],
+#     [2, 'C']
+# ]
+# lista.sort(key=operator.itemgetter(1),reverse=True)
+# print(lista)
+#
+# lista = [
+#     [1, 'B'],
+#     [3, 'A'],
+#     [2, 'C']
+# ]
+# lista.sort(key=lambda x:x[1])
+# print(lista)
+#
+# class Osoba:
+#     first_name=None
+#     last_name=None
+#     def __init__(self,f,l):
+#         self.first_name=f
+#         self.last_name=l
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# lista=[Osoba('Andrzej','Klusiewicz'),Osoba('Monika','Bożko'),Osoba('Natalia','Gmurczyk')]
+# lista.sort(key=lambda o:o.last_name)
+# for l in lista:
+#     print(l)
+
+# def powieksz(t):
+#     return t.upper()
+#
+# def funkcja(f,t):
+#     print(f(t))
+#
+# funkcja(powieksz,'oko')
+#
+# def funkcja(f,t):
+#     print(f(t))
+#
+# funkcja(lambda e:e.upper(),'oko')
+
+
+
+# import operator
+# lista = [
+#     [1, 'B'],
+#     [3, 'A'],
+#     [2, 'C']
+# ]
+# lista.sort(key=operator.itemgetter(1))
+# lista.sort(key=lambda x:x[1])
+# print(lista)
+
+#25.Wczytaj do listy kolejne wiersze z pliku dane.csv.
+# Dane posortuj po nazwiskach i wyswietl linia po linii na konsoli.
+
+
