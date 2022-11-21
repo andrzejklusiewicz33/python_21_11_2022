@@ -390,7 +390,7 @@
 
 # calosc=open('tadzio.txt',encoding='utf-8').read()
 # print(calosc.replace('a','X'))
-print('cośtam')
+#print('cośtam')
 #13. Napisz program który zliczy ilość wystąpień małej lub dużej wersji ciagu tekstowego
 # podanego przez użytkownika w pliku którego nazwę również poda użytkownik.
 
@@ -427,7 +427,30 @@ print('cośtam')
 #15. Napisz program który będzie od uzytkownika przyjmowal nazwę pliku z kodem pythona.
 # Program ma wyświetlić wszystkie linie które nie są w całości komentarzami wraz z numerami tych linii w pliku
 
-print('dupa') #komentarz
+#print('dupa') #komentarz
 #komentarz
     #komentarz
 
+# znak!='#'
+# znak<>'#'
+
+# plik=input('podaj nazwę pliku:\n')
+# x=0
+# for linia in open(plik,encoding='utf-8'):
+#     x+=1
+#     if len(linia.strip())>0 and linia.strip()[0:1]!='#':
+#         print(x,linia.strip())
+
+#PRZERWA OBIADOWA DO 13:25
+#
+# lista=[1,'dżem pomarańczowy','koza',4]
+# #lista=[]
+# lista.append('dodany element')
+# print(lista)
+# print(lista[0])
+# print('######')
+# for element in lista:
+#     print(element)
+
+#16. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
+#Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
