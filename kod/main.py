@@ -454,3 +454,68 @@
 
 #16. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
 #Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
+#
+# potegi=[]
+# for x in range(1,11):
+#     potegi.append(pow(2,x))
+# print(potegi)
+# for p in potegi:
+#     print(p)
+
+# lista1=[1,2,3,4]
+# lista2=lista1
+# lista1.clear()
+# print(lista1)
+# print(lista2)
+#
+# lista1=[1,2,3,4]
+# lista2=lista1.copy()
+# lista1.clear()
+# print(lista1)
+# print(lista2)
+#
+# lista=[1,2,3]
+# druga_lista=['lubie','pierogi']
+# lista.append(druga_lista)
+# print(lista)
+
+
+# lista=[1,2,3]
+# druga_lista=['lubie','pierogi']
+# lista.extend(druga_lista)
+# print(lista)
+#
+# lista=[1,2,3]
+# druga_lista=['lubie','pierogi']
+# suma=lista+druga_lista
+# print(suma)
+
+#
+# lista=[1,2,3]
+# druga_lista=['lubie','pierogi']
+# suma=[*lista,*druga_lista]
+# print(suma)
+#
+# lista=[1,2,3]
+# print(lista)
+# print(*lista)
+
+#
+# lista=[1,2,3]
+# druga_lista=['lubie','pierogi']
+# suma=[*lista,*druga_lista]
+# suma=[1,2,3,'lubie','pierogi']
+# print(suma)
+#
+# def funkcja(*args):
+#     pass
+#
+# lista=[1,2,3]
+# druga_lista=['lubie','pierogi']
+# suma=[]
+# suma.append(lista)
+# suma.append(druga_lista)
+# print(suma)
+
+#17.Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
+# Połącz te dwie listy do jednej i wyswietl na konsoli (extend albo *lista)
