@@ -356,3 +356,25 @@
 # tekst='siala baba mak'
 # tekst=tekst.upper()
 # print(tekst)
+
+# odebrane=input('podaj tekst:\n')
+# print(odebrane.replace(',','').replace('.','').replace('!','').replace('?','').upper())
+
+# odebrane=input('podaj tekst:\n')
+# niechciane=['!','?','.',',']
+# for n in niechciane:
+#     odebrane=odebrane.replace(n,'')
+# print(odebrane.upper())
+#
+# for linia in open('tadzio.txt',encoding='utf-8'):
+#     print(linia)
+
+#
+# for linia in open('tadzio.txt',encoding='utf-8'):
+#     print(linia.replace('a','X'))
+
+#
+# for linia in open('tadzio.txt',encoding='utf-8'):
+#     print(len(linia.strip()),linia.strip())
+
+#12. Napisz program który wyświetli na konsoli niepuste linie z pliku tekstowego którego nazwę poda użytkownik
