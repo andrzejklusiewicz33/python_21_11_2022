@@ -544,3 +544,48 @@
 
 #18. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
 # Kazdy taki element ma zawierac numer potegi oraz wartosc tej potegi dla liczby 2.
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append([x,pow(2,x)])
+# print(lista)
+
+# lista=[]
+# for x in range(1,11):
+#     lista.append(x)
+# print(lista)
+#
+# lista=[x for x in range(1,11)]
+# print(lista)
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append(x*1000)
+# print(lista)
+#
+# lista=[x*1000 for x in range(1,11)]
+# print(lista)
+
+# lista=[1,2,3,4,5,6,7,8]
+# wynik=[e*100 for e in lista]
+# print(wynik)
+
+# import random
+# wynik=[random.randint(1,10) for e in range(10)]
+# print(wynik)
+#
+# lista=[]
+# for x in range(1,11):
+#     if x%2==0:
+#         lista.append(x)
+# print(lista)
+#
+# lista=[x for x in range(1,11) if x%2==0]
+# print(lista)
+# print([x for x in range(1,11) if x%2==0])
+
+
+#send_mail('tytul','tresc',[e.email for e in get_all_participants(1)])
+
+
+#19. Korzystając z list składanych wygeneruj listę zawierajaca 10 kolejnych poteg 2
