@@ -845,3 +845,27 @@
 # Dane posortuj po nazwiskach i wyswietl linia po linii na konsoli.
 
 
+# lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# print(lista)
+# lista.sort(key=lambda x:x[2])
+# print(lista)
+
+# lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# wynik=sorted(lista,key=lambda x:x[2])
+# print(wynik)
+
+# from operator import itemgetter
+# lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# lista.sort(key=itemgetter(2))
+# print(lista)
+#
+# from operator import itemgetter
+# lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# lista=sorted(lista,key=itemgetter(2))
+# print(lista)
+
+
+#
+# lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# for w in sorted(lista,key=lambda x:x[2]):
+#     print(w)
