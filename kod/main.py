@@ -229,3 +229,56 @@
   # Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
   # oraz ile mamy aktualnie zgromadzone na koncie po doliczeniu odsetek.
   # Kapitalizacja comiesięczna
+
+
+# konto=100000
+# oprocentowanie=0.08
+# ilosc_miesiecy=24
+# for m in range(1,ilosc_miesiecy+1):
+#     konto=round(konto+(konto*oprocentowanie/12),2)
+#     print(m,konto)
+#
+# konto=100000
+# poczatkowo=konto
+# oprocentowanie=0.08
+# ilosc_miesiecy=24
+# for m in range(1,ilosc_miesiecy+1):
+#     konto=round(konto+(konto*oprocentowanie/12),2)
+#     print(m,konto)
+# print(f'zarobiłeś {round(konto-poczatkowo,2)}')
+
+
+# konto=100000
+# poczatkowo=konto
+# oprocentowanie=-0.19
+# ilosc_miesiecy=24
+# for m in range(1,ilosc_miesiecy+1):
+#     konto=round(konto+(konto*oprocentowanie/12),2)
+#     print(m,konto)
+# print(f'zarobiłeś {round(konto-poczatkowo,2)}')
+#
+#
+# while True:
+#     print('prawda')
+#
+# while 1==1:
+#     print('1==1')
+#
+# suma=0
+# x=0
+# while suma<=100:
+#    x+=1
+#    suma+=x
+#    print(suma)
+
+
+#
+# suma=0
+# x=0
+# while suma<=100:
+#    print(suma)
+#    x+=1
+#    suma+=x
+
+#8. Napisz korzystajac z petli while program który wyświetli
+# 10 kolejnych potęg liczby 2.
