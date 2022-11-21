@@ -542,7 +542,7 @@
 # print(lista[1])
 # print(lista[1][1])
 
-#18. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
+# 18. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
 # Kazdy taki element ma zawierac numer potegi oraz wartosc tej potegi dla liczby 2.
 #
 # lista=[]
@@ -585,10 +585,10 @@
 # print([x for x in range(1,11) if x%2==0])
 
 
-#send_mail('tytul','tresc',[e.email for e in get_all_participants(1)])
+# send_mail('tytul','tresc',[e.email for e in get_all_participants(1)])
 
 
-#19. Korzystając z list składanych wygeneruj listę zawierajaca 10 kolejnych poteg 2
+# 19. Korzystając z list składanych wygeneruj listę zawierajaca 10 kolejnych poteg 2
 
 # lista=[]
 # for x in range(1,11):
@@ -600,11 +600,29 @@
 # print([pow(2,x) for x in range(1,11)])
 #
 
-#20. Korzystając z list składanych wygeneruj listę 10 elementow której każdy element również będzie listą.
+# 20. Korzystając z list składanych wygeneruj listę 10 elementow której każdy element również będzie listą.
 # Pierwszy element tej podlisty to numer potegi, a drugi to wartosc tej potegi dla liczby 2
+#
+# [
+#     [1,2],
+#     [2,4],
+#     [3,8]
+# ]
 
-[
-    [1,2],
-    [2,4],
-    [3,8]
-]
+# lista = []
+# for x in range(1, 11):
+#     lista.append([x, pow(2, x)])
+# print(lista)
+#
+# lista = [[x, pow(2, x)] for x in range(1, 11)]
+# print(lista)
+# print([[x, pow(2, x)] for x in range(1, 11)])
+#
+#
+# linia='1;Andrzej;Klusiewicz;1.76;80'
+# print(linia.split(';'))
+# print(linia.split(';')[2].upper())
+# lista=linia.split(';')
+# print(lista[2].upper())
+
+#21. Napisz program który z pliku dane.csv wyświetli powiekszone imiona i nazwiska oraz wzrost i masę
