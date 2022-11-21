@@ -114,8 +114,76 @@
 
 #4. Rozbuduj swój program do bmi w taki sposob by poza wyswietleniem obliczonego bmi
 #  wyświetlił nam również odpowiedni opis wg skali z Wikipedii.
+#
+# weight=float(input('podaj masę:\n'))
+# height=float(input('podaj wzrost:\n'))
+# bmi=round(weight/pow(height,2),2)
+# print(bmi)
+#
+# if bmi<16:
+#     print('wyglodzenie')
+# elif bmi<17:
+#     print('wychudzenie')
+# elif bmi<18.5:
+#     print('niedowaga')
+# elif bmi<25:
+#     print('masa ok')
+# elif bmi<30:
+#     print('lekka niedowzrosłość')
+# elif bmi<35:
+#     print('I stopień przypakowania')
+# elif bmi<40:
+#     print('II stopień przypakowania')
+# else:
+#     print('Magda Gessler')
 
-weight=float(input('podaj masę:\n'))
-height=float(input('podaj wzrost:\n'))
-bmi=round(weight/pow(height,2),2)
-print(bmi)
+# if bmi<16:
+#     print('wyglodzenie')
+# elif bmi>=16 and bmi<=16.99:
+#     print('wychudzenie')
+
+# if bmi>18.5 and bmi<25:
+#     pass
+
+# sl=dict()
+# sl[1]='jeden'
+# sl[2]='dwa'
+# sl[3]='trzy'
+#
+# print(sl[2])
+#
+# x=1
+# print('jeden' if x==1 else 'inny')
+# if x==1:
+#     print('jeden')
+#
+# while True:
+#     pass
+
+# for x in range(10):
+#     print('hello')
+
+# for x in range(10):
+#     print(f'hello {x}')
+
+#
+# for x in range(1,11):
+#     print(f'hello {x}')
+
+#
+# for x in range(1,11,2):
+#     print(f'hello {x}')
+#
+# suma=0
+# for x in range(1,11):
+#     suma=suma+x
+# print(suma)
+
+
+# suma=0
+# for x in range(1,11):
+#     #suma=suma+x
+#     suma+=x
+# print(suma)
+
+#5. Wyświetl 20 kolejnych potęg liczby 2
