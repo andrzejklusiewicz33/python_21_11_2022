@@ -869,3 +869,5 @@
 # lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
 # for w in sorted(lista,key=lambda x:x[2]):
 #     print(w)
+
+#26.Wyświetl na konsoli linia po linii dane z pliku dane.csv ale posortowane  malejąco wg. bmi
