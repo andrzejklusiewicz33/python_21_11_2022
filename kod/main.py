@@ -977,11 +977,21 @@
 # Jedna ma zawierać 10 losowych liczb zakresu 1-10, druga 10 losowych liczb zakresu 11-20.
 # Stwórz trzecią krotkę która ma zawierać dane z obu krotek. Trzecią krotkę wypisz na konsoli
 
-lista=[1,2,3]
-print(lista)
-print(*lista)
-krotka=(1,2,3)
-print(krotka)
-print(*krotka)
-wynik=(*lista,*krotka)
-print(wynik)
+# lista=[1,2,3]
+# print(lista)
+# print(*lista)
+# krotka=(1,2,3)
+# print(krotka)
+# print(*krotka)
+# wynik=(*lista,*krotka)
+# print(wynik)
+# import random
+# krotka1=tuple([random.randint(1,10) for e in range(10)])
+# krotka2=tuple([random.randint(11,20) for e in range(10)])
+# suma=(*krotka1,*krotka2)
+# print(krotka1)
+# print(krotka2)
+# print(suma)
+
+
+#29. Napisz kod ktora wyświetli w postaci listy krotek zawartość pliku dane.csv
