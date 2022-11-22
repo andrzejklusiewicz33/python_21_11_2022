@@ -1217,22 +1217,31 @@
 # koniec=time.time()
 # print(f'czas trwania {koniec-poczatek}s')
 
+#
+#
+# import time
+# poczatek=time.time()
+# calosc=open('tadzio.txt',encoding='utf-8').read().lower()
+# niechciane=['!','?',',','.','...','/','-','_',':','(',')',';','…']
+# for n in niechciane:
+#     calosc=calosc.replace(n,'')
+# slowa=calosc.split()
+# sl=dict()
+# for s in slowa:
+#     if s in sl:
+#         sl[s]+=1
+#     else:
+#         sl[s]=1
+# wynik=[]
+# for k in sl:
+#     wynik.append( [k,sl[k]] )
+# wynik.sort(key=lambda e:e[1], reverse=True)
+# for w in wynik:
+#     print(w)
+# koniec=time.time()
+# print(f'czas trwania {koniec-poczatek}s')
 
 
-import time
-poczatek=time.time()
-calosc=open('tadzio.txt',encoding='utf-8').read().lower()
-niechciane=['!','?',',','.','...','/','-','_',':','(',')',';','…']
-for n in niechciane:
-    calosc=calosc.replace(n,'')
-slowa=calosc.split()
-sl=dict()
-for s in slowa:
-    if s in sl:
-        sl[s]+=1
-    else:
-        sl[s]=1
-for k in sl:
-    print(k,sl[k])
-koniec=time.time()
-print(f'czas trwania {koniec-poczatek}s')
+#PRZERWA OBIADOWA DO 13:15
+
+#36. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10.
