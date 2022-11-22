@@ -1091,3 +1091,10 @@
 # lista=['1','Andrzej','Klusiewicz','1.76','80',str(25)]
 # linia_csv=";".join(lista)
 # print(linia_csv)
+
+dane=[e.strip().replace(',','.').split(';') for e in open('dane.csv',encoding='utf-8') if len(e.strip())>0]
+for d in dane:
+    d.append(round(float(d[4])/pow(float(d[3]),2),2))
+bez_duplikatow=list(set([tuple(d) for d in dane]))
+for bd in bez_duplikatow:
+    print(bd)
