@@ -931,5 +931,12 @@
 # Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace w nazwie szukaną
 # frazę - wraz ze ścieżkami. Wyszukiwarka ma być nieczuła na wielkość liter
 
+import os
+startowa="e:\\"
+szukane="oracle"
+for e in os.walk(startowa):
+    for k in e[1]:
+        if szukane in k:
+            print(k)
 
 
