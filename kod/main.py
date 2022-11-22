@@ -1205,3 +1205,14 @@
 # else:
 #     print('nie mamy takiego klucza')
 
+import time
+poczatek=time.time()
+calosc=open('tadzio.txt',encoding='utf-8').read().lower()
+niechciane=['!','?',',','.','...','/','-','_',':','(',')',';','…']
+for n in niechciane:
+    calosc=calosc.replace(n,'')
+slowa=calosc.split()
+for s in slowa:
+    print(s,slowa.count(s))
+koniec=time.time()
+print(f'czas trwania {koniec-poczatek}s')
