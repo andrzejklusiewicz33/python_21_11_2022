@@ -872,12 +872,64 @@
 
 #26.Wyświetl na konsoli linia po linii dane z pliku dane.csv ale posortowane  malejąco wg. bmi
 
-lista=[e.strip().split(';') for e in open('dane.csv', encoding='utf-8')]
-for e in lista:
-    wzrost=float(e[3])
-    masa=float(e[4])
-    bmi=round(masa/pow(wzrost,2),2)
-    e.append(bmi)
+# lista=[e.strip().split(';') for e in open('dane.csv', encoding='utf-8')]
+# for e in lista:
+#     wzrost=float(e[3])
+#     masa=float(e[4])
+#     bmi=round(masa/pow(wzrost,2),2)
+#     e.append(bmi)
+#
+# lista.sort(key=lambda x:x[5],reverse=True)
+#
+# for e in lista:
+#     print(e)
+#
+#
+# from operator import itemgetter
+# lista=[e.strip().split(';') for e in open('dane.csv', encoding='utf-8')]
+# for e in lista:
+#     wzrost=float(e[3])
+#     masa=float(e[4])
+#     bmi=round(masa/pow(wzrost,2),2)
+#     e.append(bmi)
+#
+# lista.sort(key=itemgetter(5),reverse=True)
+#
+# for e in lista:
+#     print(e)
+# #
+# import os
+# for e in os.walk('e:\\'):
+#     print(e)
+# import os
+# sciecha=os.path.join('e:\\','PostgreSQL')
+# print(sciecha)
 
-for e in lista:
-    print(e)
+
+# tekst="siała baba mak"
+# if "baba" in tekst:
+#     print('jest')
+# else:
+#     print('nie ma')
+
+# lista=['siała','baba','mak']
+# if 'ba' in lista:
+#     print('jest')
+# else:
+#     print('nie ma')
+
+#
+#
+# lista=['siała','baba','mak']
+# for e in lista:
+#     if 'ba' in e:
+#         print(f'jest w {e}')
+#     else:
+#         print(f'nie ma w {e}')
+
+#27. Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
+# Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace w nazwie szukaną
+# frazę - wraz ze ścieżkami. Wyszukiwarka ma być nieczuła na wielkość liter
+
+
+
