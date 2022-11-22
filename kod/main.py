@@ -1297,7 +1297,7 @@
 #     except ZeroDivisionError:
 #         print(f'dzielenie przez zero na x={x}')
 
-#Przetwórz wszystkie wiersze z dane.csv wyswietlajac na konsoli dane z
+#38. Przetwórz wszystkie wiersze z dane.csv wyswietlajac na konsoli dane z
 # wiersza wzbogacone o bmi. Nie podmieniaj przecinków etc w tekscie. W przypadku pojawienia się
 # wyjątku na obliczaniu bmi dla   któregoś wiersza chcemy go zapisać (cały wiersz) w osobnym pliku bledy.csv
 # wzbogacony o informację o rodzaju błędu
