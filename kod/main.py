@@ -1471,3 +1471,31 @@
 
 #43.Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
 # Zaimportuj i wywołaj tę funkcję w taki sposób by przy jej wywołaniu nie trzeba było  podawać nazwy pakietu ani modułu.
+#
+# from cwiczenie43.modul import *
+# print(bmi(1.76,80))
+
+# import requests
+# response=requests.get('https://jsystems.pl/static/blog/python/dane.json')
+# print(response.status_code)
+# if response.status_code==200:
+#     dane=response.json()
+#     print(dane)
+#     print(dane['nazwisko'])
+#     adres=dane['adres']
+#     print(adres['miasto'])
+#     print(dane['adres']['miasto'])
+#     for j in dane['jezyki']:
+#         print(j)
+#
+# def funkcja():
+#     pass
+#
+# import requests
+# dane=dict()
+# response=requests.post('https://jsystems.pl/static/blog/python/dane.json',data=dane,headers={"Content-Type":"application/json"})
+# print(response.status_code)
+
+#44. z usługi sieciowej http://jsystems.pl/Universe/samaTabelka.do pobierz informację o szkoleniach.
+# na konsoli wyswietl tytuly, miasta i daty wszystkich szkolen które w tytule mają malymi badz duzymi
+# literami "Java" lub "JavaScript" i status terminu gwarantowanego (pole terminyGwarantowany=1)
