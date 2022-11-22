@@ -930,13 +930,58 @@
 #27. Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
 # Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace w nazwie szukaną
 # frazę - wraz ze ścieżkami. Wyszukiwarka ma być nieczuła na wielkość liter
+#
+# import os
+# startowa="e:\\"
+# szukane="oracle"
+# for e in os.walk(startowa):
+#     for k in e[1]:
+#         if szukane.upper() in k.upper():
+#             print(os.path.join(e[0],k))
+#     for p in e[2]:
+#         if szukane.upper() in p.upper():
+#             print(os.path.join(e[0],p))
 
-import os
-startowa="e:\\"
-szukane="oracle"
-for e in os.walk(startowa):
-    for k in e[1]:
-        if szukane in k:
-            print(k)
+#
+# lista=['a','b','c']
+# lista2=[e.upper() for e in lista]
+# print(lista2)
 
+#krotka.sort()
+# krotka=()
+# print(krotka)
 
+# krotka=(1,2,3,4,5)
+# print(krotka)
+# krotka[3]='cos innego'
+#
+# krotka=[1,2,3,4,5]
+# krotka[3]='cos innego'
+# print(krotka)
+
+# krotka=(4,7,1,2)
+# print(sorted(krotka))
+#
+# krotka=(4,7,1,2)
+# lista=list(krotka)
+# lista.sort()
+# krotka=tuple(lista)
+# print(krotka)
+# print(lista)
+# krotka=(4,7,1,2)
+# print(krotka[2])
+# for e in krotka:
+#     print(e)
+
+#28. Stwórz dwie krotki.
+# Jedna ma zawierać 10 losowych liczb zakresu 1-10, druga 10 losowych liczb zakresu 11-20.
+# Stwórz trzecią krotkę która ma zawierać dane z obu krotek. Trzecią krotkę wypisz na konsoli
+
+lista=[1,2,3]
+print(lista)
+print(*lista)
+krotka=(1,2,3)
+print(krotka)
+print(*krotka)
+wynik=(*lista,*krotka)
+print(wynik)
