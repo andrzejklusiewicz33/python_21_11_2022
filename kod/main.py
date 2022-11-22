@@ -995,3 +995,36 @@
 
 
 #29. Napisz kod ktora wyświetli w postaci listy krotek zawartość pliku dane.csv
+#
+# wynik=[ tuple(e.strip().split(';')) for e in open('dane.csv',encoding='utf-8')]
+# for w in wynik:
+#     print(w)
+
+#przerwa do 10:18
+
+# zestaw={1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3}
+# zestaw.add(4)
+# print(zestaw)
+# for z in zestaw:
+#     print(z)
+
+
+# lista=[1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3]
+# print(lista)
+# zestaw=set(lista)
+# lista=list(zestaw)
+# print(lista)
+#
+#
+# z1={1,2,3,4,5,6}
+# z2={4,5,6,7,8,9}
+#
+# print('część wspólna=', z1.intersection(z2))
+# print('z1-z2=', z1.difference(z2))
+# print('z2-z1=', z2.difference(z1))
+# print('suma=',z1.union(z2))
+#
+
+#30. Wygeneruj dwa zestawy, dodaj do nich po 20
+# (w przypadku duplikatów lista może być mniejsza niż 20 elementów)
+# losowych liczb z zakresu 1-40. Wyswietl ich sumę, różnicę i część wspólną
