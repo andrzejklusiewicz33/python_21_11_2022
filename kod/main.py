@@ -1092,9 +1092,63 @@
 # linia_csv=";".join(lista)
 # print(linia_csv)
 
-dane=[e.strip().replace(',','.').split(';') for e in open('dane.csv',encoding='utf-8') if len(e.strip())>0]
-for d in dane:
-    d.append(round(float(d[4])/pow(float(d[3]),2),2))
-bez_duplikatow=list(set([tuple(d) for d in dane]))
-for bd in bez_duplikatow:
-    print(bd)
+# dane=[e.strip().replace(',','.').split(';') for e in open('dane.csv',encoding='utf-8') if len(e.strip())>0]
+# for d in dane:
+#     d.append(str(round(float(d[4])/pow(float(d[3]),2),2)))
+# bez_duplikatow=list(set([tuple(d) for d in dane]))
+# plik=open('output.csv',encoding='utf-8',mode='w')
+# for bd in bez_duplikatow:
+#     plik.write(";".join(bd)+'\n')
+# plik.close()
+
+
+# dane=[e.strip().replace(',','.').split(';') for e in open('dane.csv',encoding='utf-8') if len(e.strip())>0]
+# for d in dane:
+#     d.append(str(round(float(d[4])/pow(float(d[3]),2),2)))
+# bez_duplikatow=list(set([tuple(d) for d in dane]))
+# with open('output.csv',encoding='utf-8',mode='w') as plik:
+#     for bd in bez_duplikatow:
+#         plik.write(";".join(bd)+'\n')
+
+
+# dane=[e.strip().replace(',','.').split(';') for e in open('dane.csv',encoding='utf-8') if len(e.strip())>0]
+# for d in dane:
+#     d.append(str(round(float(d[4])/pow(float(d[3]),2),2)))
+# with open('output.csv',encoding='utf-8',mode='w') as plik:
+#     for bd in list(set([tuple(d) for d in dane])):
+#         plik.write(";".join(bd)+'\n')
+
+#przerwa do 11:30
+#
+# slownik=dict()
+# slownik['moj_klucz']=1234
+# slownik['inny_klucz']="siała baba mak"
+# slownik['lista']=[1,2,3,4,5]
+#
+# #print(slownik['inny_klucz'])
+# #print(slownik['dupa'])
+# for k in slownik.keys():
+#     print(k,slownik[k])
+
+#
+# slownik=dict()
+# slownik['moj_klucz']=1234
+# slownik['inny_klucz']="siała baba mak"
+# slownik['lista']=[1,2,3,4,5]
+#
+# del slownik['lista']
+# #print(slownik['inny_klucz'])
+# #print(slownik['dupa'])
+# for k in slownik:
+#     print(k,slownik[k])
+#
+# for v in slownik.values():
+#     print(v)
+
+#33. Stwórz plik ustawienia.conf i umieść w nim poniższe dane
+# encoding;utf-8
+# timezone;-2
+# color;black
+# Następnie wczytaj dane do słownika w ten sposób by pierwsza kolumna stanowila
+# klucze a druga przypisane do nich
+# wartości. Przeiteruj po słowniku i wypisz klucze oraz przypisane do nich wartości
