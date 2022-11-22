@@ -784,7 +784,6 @@
 # print(lista)
 
 
-
 # import operator
 # lista = [
 #     [1, 'B'],
@@ -830,7 +829,6 @@
 # funkcja(lambda e:e.upper(),'oko')
 
 
-
 # import operator
 # lista = [
 #     [1, 'B'],
@@ -841,7 +839,7 @@
 # lista.sort(key=lambda x:x[1])
 # print(lista)
 
-#25.Wczytaj do listy kolejne wiersze z pliku dane.csv.
+# 25.Wczytaj do listy kolejne wiersze z pliku dane.csv.
 # Dane posortuj po nazwiskach i wyswietl linia po linii na konsoli.
 
 
@@ -870,7 +868,7 @@
 # for w in sorted(lista,key=lambda x:x[2]):
 #     print(w)
 
-#26.Wyświetl na konsoli linia po linii dane z pliku dane.csv ale posortowane  malejąco wg. bmi
+# 26.Wyświetl na konsoli linia po linii dane z pliku dane.csv ale posortowane  malejąco wg. bmi
 
 # lista=[e.strip().split(';') for e in open('dane.csv', encoding='utf-8')]
 # for e in lista:
@@ -927,7 +925,7 @@
 #     else:
 #         print(f'nie ma w {e}')
 
-#27. Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
+# 27. Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
 # Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace w nazwie szukaną
 # frazę - wraz ze ścieżkami. Wyszukiwarka ma być nieczuła na wielkość liter
 #
@@ -947,7 +945,7 @@
 # lista2=[e.upper() for e in lista]
 # print(lista2)
 
-#krotka.sort()
+# krotka.sort()
 # krotka=()
 # print(krotka)
 
@@ -973,7 +971,7 @@
 # for e in krotka:
 #     print(e)
 
-#28. Stwórz dwie krotki.
+# 28. Stwórz dwie krotki.
 # Jedna ma zawierać 10 losowych liczb zakresu 1-10, druga 10 losowych liczb zakresu 11-20.
 # Stwórz trzecią krotkę która ma zawierać dane z obu krotek. Trzecią krotkę wypisz na konsoli
 
@@ -994,13 +992,13 @@
 # print(suma)
 
 
-#29. Napisz kod ktora wyświetli w postaci listy krotek zawartość pliku dane.csv
+# 29. Napisz kod ktora wyświetli w postaci listy krotek zawartość pliku dane.csv
 #
 # wynik=[ tuple(e.strip().split(';')) for e in open('dane.csv',encoding='utf-8')]
 # for w in wynik:
 #     print(w)
 
-#przerwa do 10:18
+# przerwa do 10:18
 
 # zestaw={1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3}
 # zestaw.add(4)
@@ -1025,6 +1023,44 @@
 # print('suma=',z1.union(z2))
 #
 
-#30. Wygeneruj dwa zestawy, dodaj do nich po 20
+# 30. Wygeneruj dwa zestawy, dodaj do nich po 20
 # (w przypadku duplikatów lista może być mniejsza niż 20 elementów)
 # losowych liczb z zakresu 1-40. Wyswietl ich sumę, różnicę i część wspólną
+
+# import random
+# z1 = set()
+# z2 = set()
+# for x in range(20):
+#     z1.add(random.randint(1, 40))
+#     z2.add(random.randint(1, 40))
+# print(z1)
+# print(z2)
+# print('część wspólna=', z1.intersection(z2))
+# print('z1-z2=', z1.difference(z2))
+# print('z2-z1=', z2.difference(z1))
+# print('suma=',z1.union(z2))
+
+
+# import random
+# z1=set([random.randint(1,40) for e in range(20)])
+# z2=set([random.randint(1,40) for e in range(20)])
+# print(z1)
+# print(z2)
+# print('część wspólna=', z1.intersection(z2))
+# print('z1-z2=', z1.difference(z2))
+# print('z2-z1=', z2.difference(z1))
+# print('suma=',z1.union(z2))
+
+#
+# lista=[
+#     (1,'A'),
+#     (2,'C'),
+#     (1,'A')
+# ]
+#
+# print(lista)
+# zestaw=set(lista)
+# print(lista)
+
+#31. Zduplikuj jeden z wierszy w pliku dane.csv. Napisz kod który zwróci do postaci
+# listy krotek zawartość tego pliku z danymi bez powtórek.
