@@ -871,3 +871,13 @@
 #     print(w)
 
 #26.Wyświetl na konsoli linia po linii dane z pliku dane.csv ale posortowane  malejąco wg. bmi
+
+lista=[e.strip().split(';') for e in open('dane.csv', encoding='utf-8')]
+for e in lista:
+    wzrost=float(e[3])
+    masa=float(e[4])
+    bmi=round(masa/pow(wzrost,2),2)
+    e.append(bmi)
+
+for e in lista:
+    print(e)
