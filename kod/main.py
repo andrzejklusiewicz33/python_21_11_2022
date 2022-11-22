@@ -1421,3 +1421,53 @@
 
 #42. Napisz funkcję która przyjmie przez argumenty kwotę lokaty, oprocentowanie w skali roku, ilosc miesięcy.
 # Funkcja ma zwrócić zarobek na lokacie o podanych parametrach
+
+# def lokata(konto,oprocentowanie,ilosc_miesiecy):
+#     poczatkowo=konto
+#     for m in range(1,ilosc_miesiecy+1):
+#         konto=round(konto+(konto*oprocentowanie/12),2)
+#         #print(m,konto)
+#     return round(konto-poczatkowo,2)
+#
+# print( lokata(100000,0.08,24) )
+
+
+#przerwa do 14:30
+
+# import matematyka
+# print(matematyka.dodawanie(10,30))
+
+
+# import matematyka as m
+# print(m.dodawanie(10,30))
+
+#from operator import itemgetter
+#
+# from matematyka import dodawanie
+# print(dodawanie(1,2))
+
+# from matematyka import dodawanie,odejmowanie
+# print(dodawanie(1,2))
+
+# from matematyka import *
+# print(dodawanie(1,2))
+
+# from invoice_dao import *
+# from todos_dao import *
+# print(get_all())
+
+# import invoice_dao as idao
+# import todos_dao as tdao
+# print(idao.get_all())
+# print(tdao.get_all())
+
+#import matematyka
+
+#import this
+
+# import dao.invoice_dao
+#import dao.invoice_dao as idao
+#from dao.invoice_dao import *
+
+#43.Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
+# Zaimportuj i wywołaj tę funkcję w taki sposób by przy jej wywołaniu nie trzeba było  podawać nazwy pakietu ani modułu.
