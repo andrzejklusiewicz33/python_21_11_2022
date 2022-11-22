@@ -1499,3 +1499,57 @@
 #44. z usługi sieciowej http://jsystems.pl/Universe/samaTabelka.do pobierz informację o szkoleniach.
 # na konsoli wyswietl tytuly, miasta i daty wszystkich szkolen które w tytule mają malymi badz duzymi
 # literami "Java" lub "JavaScript" i status terminu gwarantowanego (pole terminyGwarantowany=1)
+
+# import requests
+# response=requests.get('http://jsystems.pl/Universe/samaTabelka.do')
+# print(response.status_code)
+# if response.status_code==200:
+#     dane=response.json()
+#     for s in dane:
+#         if ('java' in s['tytul_szkolenia'].lower() or 'javascript' in s['tytul_szkolenia'].lower()) and s['terminyGwarantowany']==1:
+#             print(s['tytul_szkolenia'],s['miasto'],s['termin'])
+
+#
+# import requests
+# response=requests.get('http://jsystems.pl/Universe/samaTabelka.do')
+# if response.status_code==200:
+#     for s in [e for e in response.json() if ('java' in e['tytul_szkolenia'].lower() or 'javascript' in e['tytul_szkolenia'].lower()) and e['terminyGwarantowany']==1]:
+#         print(s['tytul_szkolenia'],s['miasto'],s['termin'])
+
+
+
+#
+# import requests
+# response=requests.get('http://jsystems.pl/Universe/samaTabelka.do')
+# if response.status_code==200:
+#     for s in [e for e in response.json() if 'java' in e['tytul_szkolenia'].lower() and e['terminyGwarantowany']==1]:
+#         print(s['tytul_szkolenia'],s['miasto'],s['termin'])
+
+#dbeaver
+#
+# create table produkty(
+# id_produktu serial primary key,
+# 	nazwa text not null,
+# 	opis text,
+# 	cena_netto numeric
+# );
+#
+# insert into produkty(nazwa,opis,cena_netto) values ('Bulbulator','Urządzenie które robi bul bul',100);
+# insert into produkty(nazwa,opis,cena_netto) values ('Przyczłap do bulbulatora','Taki teges z takim czymś',80);
+# insert into produkty(nazwa,opis,cena_netto) values ('Urządzenie do dawania w szyję','Tylko dla kobiet do 25 lat ;)',600);
+#
+# select * from produkty;
+#
+# create table pracownicy(
+# id_pracownika serial primary key,
+# 	imie text not null,
+# 	nazwisko text not null,
+# 	telefon text,
+# 	stanowisko text
+# );
+#
+# insert into pracownicy(imie,nazwisko,telefon,stanowisko) values ('Jan','Kowalski','112','CEO');
+# insert into pracownicy(imie,nazwisko,telefon,stanowisko) values ('Twój','Stary','000000','spawacz akrobata');
+# insert into pracownicy(imie,nazwisko,telefon,stanowisko) values ('Tomasz','Nowak','99999','manager');
+#
+# select * from pracownicy;
