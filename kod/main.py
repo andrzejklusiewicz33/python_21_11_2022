@@ -1302,3 +1302,45 @@
 # wyjątku na obliczaniu bmi dla   któregoś wiersza chcemy go zapisać (cały wiersz) w osobnym pliku bledy.csv
 # wzbogacony o informację o rodzaju błędu
 #4;Andrzej;1,89;90;IOERROR
+#
+#
+# lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# for e in lista:
+#     try:
+#         bmi=round(float(e[4])/pow(float(e[3]),2),2)
+#         print(e,bmi)
+#     except Exception as ex:
+#         with open('errors.csv',encoding='utf-8',mode='a') as plik:
+#             plik.write(';'.join(e)+f";{ex}\n")
+
+
+# def witacz():
+#     print('siema!')
+#
+# witacz()
+#
+# def witacz():
+#     print('siema!')
+# def witacz(imie,nazwisko):
+#     print(f'siema {imie} {nazwisko}!')
+#
+# witacz()
+
+#
+# def pomnoz(x,y):
+#     return x*y
+
+
+
+# def pomnoz(x,y):
+#     z=x*y
+#     return z
+#     print('dupa') #nigdy nie zostanie wykonane
+#
+# print(pomnoz(10,6))
+# wynik=pomnoz(111,333)
+# print(wynik)
+
+
+#39. Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone do 2 miejsc po przecinku BMI.
+# W przypadku pojawienia się wyjątku, wyświetl na konsoli jaki wystąpił problem a z funkcji zwróć -1.
