@@ -1573,3 +1573,21 @@
 
 #45. Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
 #   wszystkie wiersze z tabelki pracownicy w fomacie csv.
+
+#";".join(krotka)
+
+#print(f'{a};{b};{c}')
+#
+# import psycopg2
+# def export_csv(filename):
+#     with psycopg2.connect(host='localhost',database="aplikacja",port=5432, user='aplikacja', password='oracle') as connection:
+#         cursor=connection.cursor()
+#         cursor.execute('select * from pracownicy')
+#         with open(filename,encoding='utf-8',mode='w') as plik:
+#             for w in cursor:
+#                 csv_line=f'{w[0]};{w[1]};{w[2]};{w[3]}\n'
+#                 plik.write(csv_line)
+#
+# export_csv('pracownicy.csv')
+
+#46. Załaduj do tabelki zawodnicy wszystkie dane z pliku dane.csv
