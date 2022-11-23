@@ -1868,4 +1868,17 @@ import os
 # Zadzwoń i powiedz jej jak siać.@comment: Domena baby: babasiejemak.com.pl klusiewicz@jsystems.pl'
 # wyciągnij za pomocą wyrażeń regularnych adres email i numer telefonu
 
-tekst="siała baba mak, nie wiedziała jak. Telefon do baby: 601 111 111 Zadzwoń i powiedz jej jak siać.@comment: Domena baby: babasiejemak.com.pl klusiewicz@jsystems.pl"
+# import re
+# tekst="siała baba mak, nie wiedziała jak. Telefon do baby: 601 111 111 Zadzwoń i powiedz jej jak siać.@comment: Domena baby: babasiejemak.com.pl klusiewicz@jsystems.pl"
+# print(re.findall('\d{3} \d{3} \d{3}',tekst)[0])
+
+# import requests
+# import re
+# html=requests.get('https://jsystems.pl/kontakt').text
+# print(re.findall('\d{3} \d{3} \d{3}',html))
+
+
+# import re
+# tekst="siała baba mak, nie wiedziała jak. Telefon do baby: 601 111 111 Zadzwoń i powiedz jej jak siać.@comment: Domena baby: babasiejemak.com.pl klusiewicz@jsystems.pl"
+# print(re.findall('\d{3} \d{3} \d{3}',tekst)[0])
+# print(re.findall('\w{1,}@\w{1,}\.[a-zA-Z]{2,4}',tekst)[0])
