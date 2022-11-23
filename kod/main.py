@@ -1719,4 +1719,51 @@
 
 #49. Napisz program który przyjmie przez argumenty wywołania adres ip lub nazwę hosta, ilosc powtorzen pinga
 #. Program ma pingowac wskazany adres  wskazana ilosc razy
+# import subprocess
+# def pinguj(ip,ile):
+#     wynik=subprocess.call(['ping','-n',ile,ip])
+#     if wynik==0:
+#         print('OK')
+#     else:
+#         print('NIE OK')
+#
+# pinguj('jsystems.pl','5')
 
+#os.walk()
+#os.path.join()
+
+#przerwa do 11:30
+
+import os
+# jestem=os.getcwd()
+# print(jestem)
+# print(os.listdir())
+# os.chdir('E:\Big Data')
+# print(os.listdir())
+# for e in os.listdir():
+#     print(e,round(os.path.getsize(e)/1024/1024,2))
+
+# sciezka='E:\Big Data'
+# if os.path.exists(sciezka):
+#     print(f'istnieje ścieżka {sciezka}')
+# else:
+#     print(f'NIE istnieje ścieżka {sciezka}')
+#
+# if os.path.isfile(sciezka):
+#     print(f'{sciezka} jest plikiem')
+# else:
+#     print(f'{sciezka} jest katalogiem')
+#
+# if os.path.isdir(sciezka):
+#     print(f'{sciezka} jest katalogiem')
+# else:
+#     print(f'{sciezka} jest plikiem')
+
+#os.mkdir('e:\\nowy_katalog')
+# os.rmdir('e:\\nowy_katalog')
+
+#50.Napisz funkcję która przyjmie przez argument ścieżkę do pliku badź katalogu.
+# Jeśli jest to plik to ma wyświetlić że jest to plik oraz wielkość tego pliku w MB zaokrągoną do 4 miejsc.
+# Jeśli jest to katalog to ma wyswietlic ze jest to katalog. Jeśli jest to katalog to poniżej wyświetl
+# zawarte w nim katalogi i pliki z informacją obok czy mamy do czynienia z katalogiem czy plikim
+# i wielkością obiektu
