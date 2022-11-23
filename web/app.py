@@ -31,3 +31,7 @@ if __name__ == '__main__':
 #kazdy ekran powinien miec swoj plik html
 
 #55. Dodaj wszędzie menu
+
+#flask page templates
+
+#przerwa do 14:40
