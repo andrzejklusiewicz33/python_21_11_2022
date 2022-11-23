@@ -1627,3 +1627,64 @@
 
 #47.Stwórz funkcję która przez argument przyjmie kwotę, ilość lat i wysokość inflacji,
 # a następnie na wykresie przedstawi spadek wartości nabywczej podanej kwoty na przestrzeni lat.
+#
+# import matplotlib.pyplot as plt
+# def inflacja(kwota,ilosc_lat,wysokosc_inflacji):
+#     dane=[kwota]
+#     poczatkowo=kwota
+#     for r in range(1,ilosc_lat+1):
+#         kwota=kwota-(kwota*wysokosc_inflacji)
+#         dane.append( kwota )
+#     print(dane)
+#     plt.plot(dane,label=f"Wartość {poczatkowo} na przestrzeni {ilosc_lat} lat")
+#     plt.legend()
+#     plt.grid()
+#     plt.show()
+#
+#
+# inflacja(100000,5,0.2)
+
+#przerwa do 10:31
+#
+# import click
+# @click.command()
+# @click.option('-imie')
+# @click.option('-nazwisko')
+# def siemator(imie,nazwisko):
+#     print(f'Siema {imie} {nazwisko}!')
+#
+# siemator()
+
+
+# import click
+# @click.command()
+# @click.option('-imie',prompt=True)
+# @click.option('-nazwisko',prompt=True)
+# def siemator(imie,nazwisko):
+#     print(f'Siema {imie} {nazwisko}!')
+#
+# siemator()
+#
+# import click
+# @click.command()
+# @click.option('-imie',required=True,help="Tu podaj imię")
+# @click.option('-nazwisko',required=True, help="Tu podaj nazwisko")
+# def siemator(imie,nazwisko):
+#     print(f'Siema {imie} {nazwisko}!')
+#
+# siemator()
+#
+# import click
+# @click.command()
+# @click.option("-password",prompt=True,hide_input=True,confirmation_prompt=True)
+# def ustaw_haslo(password):
+#     print(f'nowe hasło={password}')
+#
+# ustaw_haslo()
+
+#pip freeze > requirements.txt
+#pip install -r requirements.txt
+
+
+#48.Napisz program który przy wywołaniu dostanie kwotę, oprocentowanie i ilosc miesiecy trzymania lokaty,
+# a na konsoli wyświetli kolejne miesiące i kapitał jaki po danym miesiącu mamy.
