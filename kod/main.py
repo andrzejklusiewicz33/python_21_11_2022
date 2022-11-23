@@ -1867,3 +1867,5 @@ import os
 # 'siała baba mak, nie wiedziała jak. ---- Telefon do baby: 601 111 111.
 # Zadzwoń i powiedz jej jak siać.@comment: Domena baby: babasiejemak.com.pl klusiewicz@jsystems.pl'
 # wyciągnij za pomocą wyrażeń regularnych adres email i numer telefonu
+
+tekst="siała baba mak, nie wiedziała jak. Telefon do baby: 601 111 111 Zadzwoń i powiedz jej jak siać.@comment: Domena baby: babasiejemak.com.pl klusiewicz@jsystems.pl"
