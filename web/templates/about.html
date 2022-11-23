@@ -7,5 +7,11 @@
 <body>
 {% include 'menu.html' %}
 <h3>O programie</h3>
+<table border="1">
+    <tr><td>Imię</td><td>{{ author.first_name }}</td></tr>
+    <tr><td>Nazwisko</td><td>{{ author.last_name }}</td></tr>
+    <tr><td>Telefon</td><td>{{ author.phone_number }}</td></tr>
+    <tr><td>Email</td><td>{{ author.email }}</td></tr>
+</table>
 </body>
 </html>

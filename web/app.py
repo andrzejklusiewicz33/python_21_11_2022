@@ -15,7 +15,14 @@ def show_products():
 
 @app.route('/about')
 def about():
-    return render_template("about.html")
+    #a=Author()
+    # # a.first_name="Andrzej"
+    # # a.last_name='Klusiewicz'
+    # # a.phone_number='112'
+    # # a.email='klusiewicz@jsystems.pl'
+    a=Author("Andrzej","Klusiewicz",'112','klusiewicz@jsystems.pl')
+    print(a)
+    return render_template("about.html",author=a)
 
 class Favourites:
     film=None
@@ -50,3 +57,8 @@ if __name__ == '__main__':
 #W kontrolerze ekranu "/about" stwórz obiekt klasy Author, zapelnij go danymi
 #i wyświetl te dane na ekranie /about
 
+
+#57. Do klasy Author dodaj konstruktor sparametryzowany który umożliwi nam tworzenie obiektu
+#z podaniem od razu danych. Przerób kontroler widoku /about w taki sposób by
+# wykorzystać nowy konstruktor. Zadbaj też o to by przy wejsciu na ekran wyswietlila
+#się na konsoli zawartosc przekazywanego obiektu.
