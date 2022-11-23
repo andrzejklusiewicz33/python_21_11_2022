@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from domain import *
+import dao.employees_dao as edao
 
 app = Flask(__name__)
 
@@ -24,9 +25,11 @@ def about():
     print(a)
     return render_template("about.html",author=a)
 
-class Favourites:
-    film=None
-    book=None
+@app.route('/show_employees')
+def show_employees():
+    for e in edao.get_all():
+        print(e)
+    return render_template("show_employees.html")
 
 @app.route('/tests')
 def tests():
@@ -62,3 +65,7 @@ if __name__ == '__main__':
 #z podaniem od razu danych. Przerób kontroler widoku /about w taki sposób by
 # wykorzystać nowy konstruktor. Zadbaj też o to by przy wejsciu na ekran wyswietlila
 #się na konsoli zawartosc przekazywanego obiektu.
+
+#58. Stwórz klasę Product o odpowiednich polach - zgodnych z kolumnami w tabelce products.
+#Dodaj products_dao i umieść w nim funkcję zwracającą 3 przykładowe obiekty klasy Product.
+#Zadbaj o to by po wejściu w /show_products na konsoli wyświetliły się odebrane z dao obiekty.

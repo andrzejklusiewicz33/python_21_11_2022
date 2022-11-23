@@ -14,3 +14,23 @@ class Author:
         return str(self.__dict__)
     # def __init__(self):
     #     print('DUPA!!!!!!!!!')
+
+class Favourites:
+    film=None
+    book=None
+
+class Employee:
+    employee_id=None
+    first_name=None
+    last_name=None
+    phone_number=None
+    position=None
+    def __init__(self,ei,fn,ln,pn,po):
+        self.employee_id=ei
+        self.first_name=fn
+        self.last_name=ln
+        self.phone_number=pn
+        self.position=po
+
+    def __str__(self):
+        return str(self.__dict__)
