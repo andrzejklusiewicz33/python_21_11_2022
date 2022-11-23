@@ -1688,3 +1688,35 @@
 
 #48.Napisz program który przy wywołaniu dostanie kwotę, oprocentowanie i ilosc miesiecy trzymania lokaty,
 # a na konsoli wyświetli kolejne miesiące i kapitał jaki po danym miesiącu mamy.
+#
+# import click
+# @click.command()
+# @click.option("-kwota", required=True,prompt=True)
+# @click.option("-oprocentowanie", required=True,prompt=True)
+# @click.option("-ilosc_miesiecy", required=True,prompt=True)
+# def lokata(kwota,oprocentowanie,ilosc_miesiecy):
+#     for m in range(1,int(ilosc_miesiecy)+1):
+#         kwota=round(float(kwota)+(float(kwota)*float(oprocentowanie)/12),2)
+#         print(m,kwota)
+#
+# #lokata(10000000,0.06,24)
+# lokata()
+#
+# import subprocess
+# subprocess.call(['ping','-n','10','jsystems.pl'])
+# print('po wszystkim....')
+# #subprocess.Popen()
+
+
+# import subprocess
+# wynik=subprocess.call(['ping','-n','10','jsystems.pl'])
+# print(f'po wszystkim....wynik={wynik}')
+# #subprocess.Popen()
+
+# import subprocess
+# wynik=subprocess.Popen(['ping','-n','10','jsystems.pl'])
+# print(f'po wszystkim....wynik={wynik}')
+
+#49. Napisz program który przyjmie przez argumenty wywołania adres ip lub nazwę hosta, ilosc powtorzen pinga
+#. Program ma pingowac wskazany adres  wskazana ilosc razy
+
