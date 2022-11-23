@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from domain import *
 
 app = Flask(__name__)
 
@@ -16,9 +17,17 @@ def show_products():
 def about():
     return render_template("about.html")
 
+class Favourites:
+    film=None
+    book=None
+
 @app.route('/tests')
 def tests():
-    return render_template("tests.html")
+    jezyki=['python','java','pl/sql','pl/pgsql']
+    f=Favourites()
+    f.film='Samsara'
+    f.book='Organizacje wykładnicze'
+    return render_template("tests.html",first_name="Andrzej",last_name="Klusiewicz",langs=jezyki,favourites=f)
 
 if __name__ == '__main__':
     app.run(debug=True,port=80)
@@ -35,3 +44,9 @@ if __name__ == '__main__':
 #flask page templates
 
 #przerwa do 14:40
+
+#56. W osobnym module o nazwie domain.py umieść klasę Author
+#Klasa ta ma posiadać pola first_name,last_name,email,phone_number
+#W kontrolerze ekranu "/about" stwórz obiekt klasy Author, zapelnij go danymi
+#i wyświetl te dane na ekranie /about
+
