@@ -1553,3 +1553,23 @@
 # insert into pracownicy(imie,nazwisko,telefon,stanowisko) values ('Tomasz','Nowak','99999','manager');
 #
 # select * from pracownicy;
+
+#cx_Oracle
+# import psycopg2
+# connection=psycopg2.connect(host='localhost',database="aplikacja",port=5432, user='aplikacja', password='oracle')
+# cursor=connection.cursor()
+# cursor.execute('select * from produkty')
+# for w in cursor:
+#     print(w)
+# connection.close()
+
+
+# import psycopg2
+# with psycopg2.connect(host='localhost',database="aplikacja",port=5432, user='aplikacja', password='oracle') as connection:
+#     cursor=connection.cursor()
+#     cursor.execute('select * from produkty')
+#     for w in cursor:
+#         print(w)
+
+#45. Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
+#   wszystkie wiersze z tabelki pracownicy w fomacie csv.
