@@ -1592,8 +1592,38 @@
 
 #46. Załaduj do tabelki zawodnicy wszystkie dane z pliku dane.csv
 
-import psycopg2
-with psycopg2.connect(host='localhost',database="aplikacja",port=5432, user='aplikacja', password='oracle') as connection:
-    cursor=connection.cursor()
-    cursor.execute("insert into produkty values (4,'cośtam','opis cośtama',111)")
-    connection.commit()
+# import psycopg2
+# with psycopg2.connect(host='localhost',database="aplikacja",port=5432, user='aplikacja', password='oracle') as connection:
+#     cursor=connection.cursor()
+#     lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+#     for e in lista:
+#         #cursor.execute(f"insert into zawodnicy values ({e[0]},'{e[1]}','{e[2]}',{e[3]},{e[4]})")
+#         cursor.execute(f"insert into zawodnicy values {tuple(e)}")
+#     connection.commit()
+
+# #seaborn
+# import matplotlib.pyplot as plt
+# import random
+# seria1=[random.randint(1,40) for e in range(50)]
+# seria2=[random.randint(1,40) for e in range(50)]
+# plt.plot(seria1,'#FF00FF',label="pierwsza seria")
+# plt.plot(seria2,'r:',label="druga seria")
+# plt.xlabel("oś X")
+# plt.ylabel('wartość dla X')
+# plt.savefig('wykres.png')
+# plt.legend()
+# plt.grid()
+# plt.show()
+#
+# import matplotlib.pyplot as plt
+# import random
+# osx=list(range(1,11))
+# print(osx)
+# dane=[random.randint(1,40) for e in range(10)]
+# drugie_dane=[random.randint(1,40) for e in range(10)]
+# plt.plot(drugie_dane,'r-')
+# plt.bar(osx,dane)
+# plt.show()
+
+#47.Stwórz funkcję która przez argument przyjmie kwotę, ilość lat i wysokość inflacji,
+# a następnie na wykresie przedstawi spadek wartości nabywczej podanej kwoty na przestrzeni lat.
