@@ -1767,3 +1767,59 @@ import os
 # Jeśli jest to katalog to ma wyswietlic ze jest to katalog. Jeśli jest to katalog to poniżej wyświetl
 # zawarte w nim katalogi i pliki z informacją obok czy mamy do czynienia z katalogiem czy plikim
 # i wielkością obiektu
+
+# def check_it(path):
+#     if os.path.isfile(path):
+#         print(f'To jest plik: {path}')
+#         print(f'Wielkość pliku={round(os.path.getsize(path)/1024/1024,4)} MB')
+#     else:
+#         print(f'To jest katalog: {path}')
+#         #print(os.listdir(path))
+#         for f in os.listdir(path):
+#             rodzaj='nie ustalono'
+#             if os.path.isdir(os.path.join(path,f)):
+#                 rodzaj='katalog'
+#             else:
+#                 rodzaj='plik'
+#             wielkosc=round(os.path.getsize(os.path.join(path,f))/1024/1024,4)
+#             print(rodzaj,f,str(wielkosc)+'MB')
+
+
+#check_it('e:\\rwt.exe')
+#check_it('e:\\')
+
+#Scrapy
+#BeautifulSoup
+
+# import requests
+# from bs4 import BeautifulSoup
+# html=requests.get('https://jsystems.pl/static/data/pnl/dane.html')
+# html.encoding='utf-8'
+# if html.status_code==200:
+#     soup=BeautifulSoup(html.text,'html.parser')
+#     tabelka=soup.find(id="tabelka")
+#     print(tabelka.attrs)
+    # sekcja4=soup.find(id="sekcja4")
+    # punkty_w_sekcja4=sekcja4.findAll('li')
+    # for pws in punkty_w_sekcja4:
+    #     print(pws.text)
+    #print(sekcja4.text)
+    # stopka=soup.find(attrs={"name":"stopka"})
+    # print(stopka.text)
+    # lis=soup.findAll('li')
+    # print(lis)
+    # podsekcje=soup.findAll(class_="podsekcja")
+    # print(len(podsekcje))
+    # for p in podsekcje:
+    #     print(p.text)
+    #
+    # element=soup.find(class_="podsekcja")
+    # print(element.text)
+    # sekcja2=soup.find(id="sekcja2")
+    # print(sekcja2)
+    # # print(sekcja2.text)
+    # # print(soup.h3)
+    # print(soup.h3.text)
+    #print(html.text)
+
+#51. Ze strony kontakt pobierz i wyświetl oczyszczone z tagów html na konsoli numery telefonów do szkoleń oraz email.
