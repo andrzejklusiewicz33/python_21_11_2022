@@ -1823,3 +1823,47 @@ import os
     #print(html.text)
 
 #51. Ze strony kontakt pobierz i wyświetl oczyszczone z tagów html na konsoli numery telefonów do szkoleń oraz email.
+
+# import requests
+# from bs4 import BeautifulSoup
+# html=requests.get('https://jsystems.pl/kontakt')
+# html.encoding='utf-8'
+# if html.status_code==200:
+#     soup=BeautifulSoup(html.text,'html.parser')
+#     info_dane_sections=soup.findAll(class_="info__dane")
+#     #print(info_dane_sections)
+#     print(info_dane_sections[1].text.strip().split(' lub '))
+#     print(info_dane_sections[2].text.strip())
+
+#obiad do 13:15
+
+# import re
+# tekst="siała baba mak i dostała 10 lat bo nie płaciła VAT www.jsystems.pl srutututu 123456789"
+# print(re.findall("\d",tekst))
+# print(re.findall("\d{2}",tekst))
+# print(re.findall("\D",tekst))
+# print(re.findall("\w",tekst))
+# print(re.findall("\W",tekst))
+# print(re.findall("\s",tekst))
+# print(re.findall("\S",tekst))
+# print(re.findall("[0-5]",tekst))
+# print(re.findall("[a-zA-Z]",tekst))
+# print(re.findall("[^a-zA-Z]",tekst))
+# print(re.findall("\d{2}",tekst))
+# print(re.findall("\d{2,}",tekst))
+# print(re.findall("\d{,2}",tekst))
+# print(re.findall("\d{1,2}",tekst))
+# print(re.findall("\d*",tekst))
+# print(re.findall("\d?",tekst))
+# print(re.findall("\d+",tekst))
+# print(re.findall("\d{1,}",tekst))
+
+
+# import re
+# tekst="siała baba mak i dostała 10 lat bo nie płaciła VAT www.jsystems.pl srutututu 123456789"
+# print(re.findall('www\.\w{1,}\.[a-zA-Z]{2,4}',tekst))
+
+#52. Z tekstu:
+# 'siała baba mak, nie wiedziała jak. ---- Telefon do baby: 601 111 111.
+# Zadzwoń i powiedz jej jak siać.@comment: Domena baby: babasiejemak.com.pl klusiewicz@jsystems.pl'
+# wyciągnij za pomocą wyrażeń regularnych adres email i numer telefonu
