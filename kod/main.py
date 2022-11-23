@@ -1591,3 +1591,9 @@
 # export_csv('pracownicy.csv')
 
 #46. Załaduj do tabelki zawodnicy wszystkie dane z pliku dane.csv
+
+import psycopg2
+with psycopg2.connect(host='localhost',database="aplikacja",port=5432, user='aplikacja', password='oracle') as connection:
+    cursor=connection.cursor()
+    cursor.execute("insert into produkty values (4,'cośtam','opis cośtama',111)")
+    connection.commit()
