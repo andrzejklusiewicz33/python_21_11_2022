@@ -219,15 +219,22 @@
 
 #73. Przesłoń metodę "__str__" w klasie "Samochod". Stworz obiekt tej klasy i wyswietl jego zawartosc na konsoli.
 
-class Samochod:
-    marka=None
-    model=None
-    rejestracja=None
+# class Samochod:
+#     marka=None
+#     model=None
+#     rejestracja=None
+#
+#     def __init__(self,ma,mo,re):
+#         self.marka=ma
+#         self.model=mo
+#         self.rejestracja=re
+#
+#     def __str__(self):
+#         return f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}'
+#
+# s=Samochod('A','B','C')
+# print(s)
 
-    def __init__(self,ma,mo,re):
-        self.marka=ma
-        self.model=mo
-        self.rejestracja=re
+#74. Załaduj dane z pliku zawodnicy.csv do postaci listy obiektów.
+# Następnie przeiteruj po tej liście i wyświetl zawartość każdego z obiektów
 
-    def wyswietl(self):
-        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
