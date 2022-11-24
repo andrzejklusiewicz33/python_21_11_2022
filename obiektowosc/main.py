@@ -191,5 +191,43 @@
 # do tego słownika zawartość pliku konfiguracyjnego w taki sposób,
 # by pierwsza kolumna stanowiła klucze dla słownika a druga wartości.
 #Przetestuj tworzenie obiektu i wyświetl zawarty w nim słownik
+#
+# class Ustawienia:
+#     conf=dict()
+#     def __init__(self):
+#         for e in [line.strip().split(';') for line  in  open('config.conf',encoding='utf-8')]:
+#             self.conf[e[0]]=e[1]
+#
+# u=Ustawienia()
+# print(u.conf)
+#
 
+#przerwa do 14:36
 
+# class Person:
+#     first_name=None
+#     last_name=None
+#
+#     def __init__(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#     def __str__(self):
+#         return f'first_name={self.first_name}, last_name={self.last_name}'
+#
+# p=Person('ośnieżkowany','geodeta')
+# print(p)
+
+#73. Przesłoń metodę "__str__" w klasie "Samochod". Stworz obiekt tej klasy i wyswietl jego zawartosc na konsoli.
+
+class Samochod:
+    marka=None
+    model=None
+    rejestracja=None
+
+    def __init__(self,ma,mo,re):
+        self.marka=ma
+        self.model=mo
+        self.rejestracja=re
+
+    def wyswietl(self):
+        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
