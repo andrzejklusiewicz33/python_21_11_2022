@@ -1,4 +1,4 @@
-from flask import Flask, render_template,jsonify
+from flask import Flask, render_template,request
 from domain import *
 import dao.employees_dao as edao
 import dao.products_dao as pdao
@@ -33,6 +33,12 @@ def about():
 def show_employees():
     employees=edao.get_all()
     return render_template("show_employees.html",employees=employees)
+
+@app.route('/show_employee_details')
+def show_employee_details():
+    id=request.args.get('id')
+    print(f'id={id}')
+    return render_template("show_employee_details.html")
 
 @app.route('/tests')
 def tests():
@@ -79,3 +85,6 @@ if __name__ == '__main__':
 #produkt i nazwę. Opis będzie widoczny w ekranie szczegoly produktu.
 
 #60. Przerób widok listy produktów tak, by dane pochodzily z bazy
+
+#61. Dodaj ekran szczegółów produktu i prowadzące do niego linki z listy produktow.
+#Po wejsciu na ekran szczegolow produktu na konsoli powinno sie wyswietlic id odczytane z paska
