@@ -166,3 +166,30 @@
 # Pola te mają być uzupełniane przy tworzeniu obiektu. Dodaj do klasy metodę get_bmi
 # która zwróci obliczone na podstawie pól BMI. Powołaj do życia obiekt tej klasy
 # i wyświetl na konsoli obliczone BMI.
+
+# class Zawodnik:
+#
+#     def __init__(self,w,m):
+#         self.wzrost=w
+#         self.masa=m
+#
+#     def get_bmi(self):
+#         return round(self.masa/pow(self.wzrost,2),2)
+#
+# z=Zawodnik(1.76,80)
+# print(z.get_bmi())
+# z.nieistniejace_pole='dupa'
+# print(z.nieistniejace_pole)
+
+
+#72. Stwórz plik konfiguracyjny z zawartością:
+# encoding;utf-8
+# timezone;-2
+# color;black
+# Stwórz klasę Ustawienia która będzie posiadała słownik.
+# Niech każdy obiekt klasy ustawienia podczas jego tworzenia wczytuje
+# do tego słownika zawartość pliku konfiguracyjnego w taki sposób,
+# by pierwsza kolumna stanowiła klucze dla słownika a druga wartości.
+#Przetestuj tworzenie obiektu i wyświetl zawarty w nim słownik
+
+
