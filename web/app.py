@@ -95,6 +95,11 @@ def rest_products():
     products=[p.serialize() for p in pdao.get_all()]
     return products
 
+@app.route('/rest_product_details')
+def rest_product_details():
+    id=request.args.get('id')
+    product=pdao.get_one(id)
+    return product.serialize()
 
 def watek(x):
     for i in range(1,x+1):
@@ -170,3 +175,5 @@ if __name__ == '__main__':
 #66. Stwórz usługę sieciową która zwróci listę zserializowanych obiektów klasy Product
 
 #67. Dodaj usługę sieciową która zwróci zserializowany produkt którego id przekażemy przez pasek
+
+#przerwa obiadowa do 13:20
