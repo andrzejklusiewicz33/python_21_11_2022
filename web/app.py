@@ -1,6 +1,7 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,jsonify
 from domain import *
 import dao.employees_dao as edao
+import dao.products_dao as pdao
 
 app = Flask(__name__)
 
@@ -12,6 +13,8 @@ def index():  # put application's code here
 
 @app.route('/show_products')
 def show_products():
+    for p in pdao.get_all():
+        print(p)
     return render_template("show_products.html")
 
 @app.route('/about')
@@ -27,9 +30,10 @@ def about():
 
 @app.route('/show_employees')
 def show_employees():
-    for e in edao.get_all():
+    employees=edao.get_all()
+    for e in employees:
         print(e)
-    return render_template("show_employees.html")
+    return render_template("show_employees.html",employees=employees)
 
 @app.route('/tests')
 def tests():
@@ -38,6 +42,7 @@ def tests():
     f.film='Samsara'
     f.book='Organizacje wykładnicze'
     return render_template("tests.html",first_name="Andrzej",last_name="Klusiewicz",langs=jezyki,favourites=f)
+
 
 if __name__ == '__main__':
     app.run(debug=True,port=80)
@@ -69,3 +74,7 @@ if __name__ == '__main__':
 #58. Stwórz klasę Product o odpowiednich polach - zgodnych z kolumnami w tabelce products.
 #Dodaj products_dao i umieść w nim funkcję zwracającą 3 przykładowe obiekty klasy Product.
 #Zadbaj o to by po wejściu w /show_products na konsoli wyświetliły się odebrane z dao obiekty.
+
+
+#59. Wyświetl pochodzące z dao dane o produktach na widoku. Wyswietl tylko id produktu,
+#produkt i nazwę. Opis będzie widoczny w ekranie szczegoly produktu.
