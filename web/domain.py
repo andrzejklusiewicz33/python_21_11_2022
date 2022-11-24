@@ -35,6 +35,11 @@ class Employee:
     def __str__(self):
         return str(self.__dict__)
 
+    def serialize(self):
+        return self.__dict__
+
+
+
 class Product:
     product_id=None
     name=None

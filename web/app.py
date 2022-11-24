@@ -1,4 +1,4 @@
-from flask import Flask, render_template,request,redirect
+from flask import Flask, render_template,request,redirect,jsonify
 from domain import *
 import dao.employees_dao as edao
 import dao.products_dao as pdao
@@ -84,6 +84,11 @@ def tests():
     t.start()
     return render_template("tests.html",first_name="Andrzej",last_name="Klusiewicz",langs=jezyki,favourites=f)
 
+@app.route('/rest_employees')
+def data():
+    #dane={"pole1":"wartość 1","pole2":[1,2,3,4],"pole3":{"podpole1":"wartość podpola 1", "podpole2":"wartość podpola 2"}}
+    employees=[e.serialize() for e in edao.get_all()]
+    return jsonify(employees)#jsonify(dane)
 
 def watek(x):
     for i in range(1,x+1):
@@ -152,4 +157,8 @@ if __name__ == '__main__':
 
 #przerwa do 11:51
 
-#65. Zadbaj o to by dane wprowadzone w formularzu do dodawania pracowników lądowały w bazie
+#65. Zadbaj o to by dane wprowadzone w formularzu do dodawania produktow lądowały w bazie
+
+#SQLAlchemy - klusiewicz@jsystems.pl
+
+#66. Stwórz usługę sieciową która zwróci listę zserializowanych obiektów klasy Product

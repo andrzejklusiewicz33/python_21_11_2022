@@ -28,4 +28,8 @@ def get_one(id):
 
 
 def save(product):
-    print(f'zapis do bazy: {product}')
+    sql = f"insert into produkty(nazwa,opis,cena_netto) values('{product.name}','{product.description}',{product.price})"
+    with psycopg2.connect(host=ds.host, port=ds.port, database=ds.database, user=ds.user,password=ds.password) as connection:
+        cursor = connection.cursor()
+        cursor.execute(sql)
+        connection.commit()
