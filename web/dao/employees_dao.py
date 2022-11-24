@@ -27,5 +27,8 @@ def get_one(id):
         employee=Employee(w[0],w[1],w[2],w[3],w[4])
         return employee
 
+def save(employee):
+    print(f'zapisuję do bazy {employee}')
+
 #threading
 #asyncio

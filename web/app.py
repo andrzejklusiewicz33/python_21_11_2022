@@ -24,6 +24,18 @@ def show_product_details():
     product=pdao.get_one(id)
     return render_template("show_product_details.html",product=product)
 
+@app.route('/add_product')
+def add_product():
+    return render_template("add_product.html")
+
+@app.route('/add_product',methods=['POST'])
+def add_product_post():
+    name=request.form['name']
+    description=request.form['description']
+    price=request.form['price']
+    print(name,description,price)
+    return redirect('/show_products')
+
 @app.route('/about')
 def about():
     #a=Author()
@@ -56,7 +68,8 @@ def add_employee_post():
     last_name=request.form['last_name']
     phone_number=request.form['phone_number']
     position=request.form['position']
-    print(first_name,last_name,phone_number,position)
+    employee=Employee(None,first_name,last_name,phone_number,position)
+    edao.save(employee)
     return redirect("/show_employees")
 
 
@@ -131,3 +144,7 @@ if __name__ == '__main__':
 
 #63. Dodaj formularz dodawania nowego produktu i zadbaj o to by po jego zatwierdzeniu wyswietlic na konsoli
 #dane wprowadzone do formularza, a następnie przekierować na listę produktów
+
+#64. Z odebranych danyhc o produkcie stwórz obiekt klasy Product
+# i przekaz go do funkcji save (którą trzeba stworzyć w product_dao).
+#Funkcja save ma po prostu wydrukować obiekt na konsoli
