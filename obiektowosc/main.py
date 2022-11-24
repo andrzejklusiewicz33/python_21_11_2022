@@ -81,9 +81,88 @@
 #69. Zadbaj o to by klasa Samochod posiadała metodę pozwalającą ustawić wartości wszystkich pól.
 # Jej przykładowe wywołanie: s1.ustaw_wartosci(‘Renault’,’Kadjar’,’WE968RP’)
 
-class Samochod:
-    marka=None
-    model=None
-    rejestracja=None
-    def wyswietl(self):
-        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+# class Samochod:
+#     '''
+#     Pamiętaj o wywołaniu funkcji ustaw_wartosci po stworzeniu obiektu
+#     '''
+#     marka=None
+#     model=None
+#     rejestracja=None
+#
+#     def ustaw_wartosci(self,ma,mo,re):
+#         self.marka=ma
+#         self.model=mo
+#         self.rejestracja=re
+#
+#     def wyswietl(self):
+#         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+
+#help(Samochod)
+#
+#s=Samochod()
+# s.ustaw_wartosci('Renault','Kadjar','WE12345')
+#s.wyswietl()
+#
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#
+#     def __init__(self,fn,ln):
+#         print('konstruktor!')
+#         self.first_name=fn
+#         self.last_name=ln
+#
+#     def set_values(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#
+#     def show_me(self):
+#         print(f'first_name={self.first_name}, last_name={self.last_name}')
+
+# p=Person('Andrzej','Klusiewicz')
+# p.show_me()
+
+# p=Person(None,None)
+# p.show_me()
+
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#
+#     def __init__(self,fn='nie podano',ln='nie podano'):
+#         self.first_name=fn
+#         self.last_name=ln
+#
+#     def show_me(self):
+#         print(f'first_name={self.first_name}, last_name={self.last_name}')
+#
+# p=Person()
+# p.show_me()
+
+
+#70. Dodaj do klasy Samochód konstruktor wymuszający ustawienie wartości wszystkich pól przy tworzeniu obiektu.
+# Stworz obiekt klasy samochod i wywolaj na nim metode wyswietl
+
+#
+# class Samochod:
+#     marka=None
+#     model=None
+#     rejestracja=None
+#
+#     def __init__(self,ma,mo,re):
+#         self.marka=ma
+#         self.model=mo
+#         self.rejestracja=re
+#
+#     def wyswietl(self):
+#         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+#
+# s=Samochod('A','B','C')
+# s.wyswietl()
+
+#71. Stwórz klasę Zawodnik posiadającą pola wzrost i masa.
+# Pola te mają być uzupełniane przy tworzeniu obiektu. Dodaj do klasy metodę get_bmi
+# która zwróci obliczone na podstawie pól BMI. Powołaj do życia obiekt tej klasy
+# i wyświetl na konsoli obliczone BMI.
