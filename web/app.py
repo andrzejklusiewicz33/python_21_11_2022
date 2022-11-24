@@ -1,4 +1,4 @@
-from flask import Flask, render_template,request
+from flask import Flask, render_template,request,redirect
 from domain import *
 import dao.employees_dao as edao
 import dao.products_dao as pdao
@@ -16,15 +16,13 @@ def index():  # put application's code here
 @app.route('/show_products')
 def show_products():
     products=pdao.get_all()
-    for p in products:
-        print(p)
     return render_template("show_products.html",products=products)
 
 @app.route('/show_product_details')
 def show_product_details():
     id=request.args.get('id')
-    print(f'id={id}')
-    return render_template("show_product_details.html")
+    product=pdao.get_one(id)
+    return render_template("show_product_details.html",product=product)
 
 @app.route('/about')
 def about():
@@ -47,6 +45,20 @@ def show_employee_details():
     id=request.args.get('id')
     employee=edao.get_one(id)
     return render_template("show_employee_details.html",employee=employee)
+
+@app.route('/add_employee')
+def add_employee():
+    return render_template("add_employee.html")
+
+@app.route('/add_employee',methods=['POST'])
+def add_employee_post():
+    first_name=request.form['first_name']
+    last_name=request.form['last_name']
+    phone_number=request.form['phone_number']
+    position=request.form['position']
+    print(first_name,last_name,phone_number,position)
+    return redirect("/show_employees")
+
 
 @app.route('/tests')
 def tests():
@@ -108,3 +120,14 @@ if __name__ == '__main__':
 #przerwa  na reklamy do 10:30
 
 #62. Zadbaj o to by strona szczegolow produktu wyswietlala dane z bazy
+#
+# class Dupa{
+#     public static void main(String args[]){
+#         System.out.println('dupa!');
+# }
+# }
+#
+# print('dupa!')
+
+#63. Dodaj formularz dodawania nowego produktu i zadbaj o to by po jego zatwierdzeniu wyswietlic na konsoli
+#dane wprowadzone do formularza, a następnie przekierować na listę produktów

@@ -17,3 +17,11 @@ def get_all():
                 product=Product(w[0],w[1],w[2],w[3])
                 result.append(product)
     return result
+
+def get_one(id):
+    with psycopg2.connect(host=ds.host, port=ds.port, database=ds.database, user=ds.user,password=ds.password) as connection:
+        cursor = connection.cursor()
+        cursor.execute(f'select * from produkty where id_produktu={id}')
+        w=cursor.fetchone()
+        product=Product(w[0],w[1],w[2],w[3])
+        return product
