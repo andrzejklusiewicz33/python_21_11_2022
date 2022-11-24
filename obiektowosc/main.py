@@ -309,3 +309,89 @@
 # za pośrednictwem setterów. Zadbaj o to by nie dało się ustawić marki ani modelu o zerowej długości oraz
 # o to by długość rejestracji zawsze mieściła się w zakresie 7-8 znaków.
 # W przypadku podania niewłasciwych danych rzuć wyjątkiem z adekwatnym komunikatem.
+#
+# class Samochod:
+#
+#     def set_marka(self,ma):
+#         if ma is None or len(ma)==0:
+#             raise Exception('marka nie może być pusta')
+#         self.__marka = ma
+#
+#     def set_model(self,mo):
+#         if mo is None or len(mo)==0:
+#             raise Exception('model nie może być pusty')
+#         self.__model = mo
+#
+#     def set_rejestracja(self,re):
+#         if re is None or len(re)>8 or len(re)<7:
+#             raise Exception('długość rejestracji musi mieć 7-8 znaków')
+#         self.__rejestracja = re
+#     def __init__(self,ma,mo,re):
+#         self.set_marka(ma)
+#         self.set_model(mo)
+#         self.set_rejestracja(re)
+#     def __str__(self):
+#         return f"marka={self.__marka}, model={self.__model}, rejestracja={self.__rejestracja}"
+#
+# s=Samochod('A','B','1234567')
+# print(s)
+
+# class Samochod:
+#     def jedz(self):
+#         print('łutututututu')
+#
+# class SuperSamochod(Samochod):
+#     def turbo(self):
+#         print('turbo!!!!!!!')
+#
+# s=Samochod()
+# s.jedz()
+# ss=SuperSamochod()
+# ss.jedz()
+# ss.turbo()
+#
+#
+# class A:
+#     def funkcjaA(self):
+#         print('funkcja z a')
+#
+#
+# class B:
+#     def funkcjaB(self):
+#         print('funkcja z b')
+#
+# class C(A,B):
+#     pass
+#
+# a=A()
+# a.funkcjaA()
+# b=B()
+# b.funkcjaB()
+# c=C()
+# c.funkcjaA()
+# c.funkcjaB()
+
+#
+#
+# class A:
+#     def funkcja(self):
+#         print('funkcja z a')
+#
+# class B:
+#     def funkcja(self):
+#         print('funkcja z b')
+#
+# class C(B,A):
+#     pass
+#
+# c=C()
+# c.funkcja()
+
+#76. Stwórz klasę Samochod i dodaj do niej metodę jedz() która bedzie wyświetlala napis na konsoli.
+# Dodaj konstruktor pozwalajacy tworzyc obiekty z podaniem marki modelu i rejestracji do klasy Samochod.
+# Stwórz klasę "Działo" która będzie posiadała metodę strzelaj(). Stwórz klasę "Czolg" która będzie
+# dziedziczyła po klasach Samochod i Dzialo. Stwórz obiekt klasy Czolg i wywolaj na nim zarówno metodę jedz()
+# jak i strzelaj(). Zwróć uwagę na to jak trzeba wywołać konstruktor obiektu klasy Czolg.
+# Sprawdz czy zmiana kolejnosci dziedziczenia wplywa na sposob wywołania konstruktora.
+# Sprawdz czy dodanie bezparametrowego __init__ do klasy Czolg zmienia zachowanie.
+
