@@ -395,3 +395,26 @@
 # Sprawdz czy zmiana kolejnosci dziedziczenia wplywa na sposob wywołania konstruktora.
 # Sprawdz czy dodanie bezparametrowego __init__ do klasy Czolg zmienia zachowanie.
 
+
+class Samochod:
+    def jedz(self):
+        print('popierdzielam....')
+    def __init__(self,ma,mo,re):
+        self.marka=ma
+        self.model=mo
+        self.rejestracja=re
+
+class Dzialo:
+    def strzelaj(self):
+        print('jeb jeb jeb z dzidy laserowej')
+    #
+    # def __init__(self):
+    #     pass
+
+class Czolg(Samochod,Dzialo):
+    def __init__(self):
+        super().__init__('a','b','c')
+        print('dodatkowe czynnosci')
+
+
+c=Czolg()
