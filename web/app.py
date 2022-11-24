@@ -13,9 +13,10 @@ def index():  # put application's code here
 
 @app.route('/show_products')
 def show_products():
-    for p in pdao.get_all():
+    products=pdao.get_all()
+    for p in products:
         print(p)
-    return render_template("show_products.html")
+    return render_template("show_products.html",products=products)
 
 @app.route('/about')
 def about():
@@ -31,8 +32,6 @@ def about():
 @app.route('/show_employees')
 def show_employees():
     employees=edao.get_all()
-    for e in employees:
-        print(e)
     return render_template("show_employees.html",employees=employees)
 
 @app.route('/tests')
@@ -78,3 +77,5 @@ if __name__ == '__main__':
 
 #59. Wyświetl pochodzące z dao dane o produktach na widoku. Wyswietl tylko id produktu,
 #produkt i nazwę. Opis będzie widoczny w ekranie szczegoly produktu.
+
+#60. Przerób widok listy produktów tak, by dane pochodzily z bazy
