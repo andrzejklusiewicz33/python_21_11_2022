@@ -33,7 +33,8 @@ def add_product_post():
     name=request.form['name']
     description=request.form['description']
     price=request.form['price']
-    print(name,description,price)
+    product=Product(None,name,description,price)
+    pdao.save(product)
     return redirect('/show_products')
 
 @app.route('/about')
@@ -148,3 +149,7 @@ if __name__ == '__main__':
 #64. Z odebranych danyhc o produkcie stwórz obiekt klasy Product
 # i przekaz go do funkcji save (którą trzeba stworzyć w product_dao).
 #Funkcja save ma po prostu wydrukować obiekt na konsoli
+
+#przerwa do 11:51
+
+#65. Zadbaj o to by dane wprowadzone w formularzu do dodawania pracowników lądowały w bazie

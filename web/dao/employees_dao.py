@@ -28,7 +28,11 @@ def get_one(id):
         return employee
 
 def save(employee):
-    print(f'zapisuję do bazy {employee}')
+    sql=f"insert into pracownicy(imie,nazwisko,telefon,stanowisko) values('{employee.first_name}','{employee.last_name}','{employee.phone_number}','{employee.position}')"
+    with psycopg2.connect(host=ds.host, port=ds.port, database=ds.database, user=ds.user,password=ds.password) as connection:
+        cursor = connection.cursor()
+        cursor.execute(sql)
+        connection.commit()
 
 #threading
 #asyncio

@@ -25,3 +25,7 @@ def get_one(id):
         w=cursor.fetchone()
         product=Product(w[0],w[1],w[2],w[3])
         return product
+
+
+def save(product):
+    print(f'zapis do bazy: {product}')
