@@ -85,10 +85,16 @@ def tests():
     return render_template("tests.html",first_name="Andrzej",last_name="Klusiewicz",langs=jezyki,favourites=f)
 
 @app.route('/rest_employees')
-def data():
+def rest_employees():
     #dane={"pole1":"wartość 1","pole2":[1,2,3,4],"pole3":{"podpole1":"wartość podpola 1", "podpole2":"wartość podpola 2"}}
     employees=[e.serialize() for e in edao.get_all()]
     return jsonify(employees)#jsonify(dane)
+
+@app.route('/rest_products')
+def rest_products():
+    products=[p.serialize() for p in pdao.get_all()]
+    return products
+
 
 def watek(x):
     for i in range(1,x+1):
@@ -162,3 +168,5 @@ if __name__ == '__main__':
 #SQLAlchemy - klusiewicz@jsystems.pl
 
 #66. Stwórz usługę sieciową która zwróci listę zserializowanych obiektów klasy Product
+
+#67. Dodaj usługę sieciową która zwróci zserializowany produkt którego id przekażemy przez pasek
