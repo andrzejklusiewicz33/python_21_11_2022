@@ -19,5 +19,13 @@ def get_all():
                 result.append(employee)
     return result
 
+def get_one(id):
+    with psycopg2.connect(host=ds.host, port=ds.port, database=ds.database, user=ds.user,password=ds.password) as connection:
+        cursor = connection.cursor()
+        cursor.execute(f'select * from pracownicy where id_pracownika={id}')
+        w=cursor.fetchone()
+        employee=Employee(w[0],w[1],w[2],w[3],w[4])
+        return employee
+
 #threading
 #asyncio

@@ -2,6 +2,8 @@ from flask import Flask, render_template,request
 from domain import *
 import dao.employees_dao as edao
 import dao.products_dao as pdao
+import threading
+import time
 
 app = Flask(__name__)
 
@@ -17,6 +19,12 @@ def show_products():
     for p in products:
         print(p)
     return render_template("show_products.html",products=products)
+
+@app.route('/show_product_details')
+def show_product_details():
+    id=request.args.get('id')
+    print(f'id={id}')
+    return render_template("show_product_details.html")
 
 @app.route('/about')
 def about():
@@ -37,8 +45,8 @@ def show_employees():
 @app.route('/show_employee_details')
 def show_employee_details():
     id=request.args.get('id')
-    print(f'id={id}')
-    return render_template("show_employee_details.html")
+    employee=edao.get_one(id)
+    return render_template("show_employee_details.html",employee=employee)
 
 @app.route('/tests')
 def tests():
@@ -46,7 +54,15 @@ def tests():
     f=Favourites()
     f.film='Samsara'
     f.book='Organizacje wykładnicze'
+    t=threading.Thread(target=watek,args=(10,))
+    t.start()
     return render_template("tests.html",first_name="Andrzej",last_name="Klusiewicz",langs=jezyki,favourites=f)
+
+
+def watek(x):
+    for i in range(1,x+1):
+        time.sleep(1)
+        print(i)
 
 
 if __name__ == '__main__':
@@ -88,3 +104,7 @@ if __name__ == '__main__':
 
 #61. Dodaj ekran szczegółów produktu i prowadzące do niego linki z listy produktow.
 #Po wejsciu na ekran szczegolow produktu na konsoli powinno sie wyswietlic id odczytane z paska
+
+#przerwa  na reklamy do 10:30
+
+#62. Zadbaj o to by strona szczegolow produktu wyswietlala dane z bazy
