@@ -237,4 +237,75 @@
 
 #74. Załaduj dane z pliku zawodnicy.csv do postaci listy obiektów.
 # Następnie przeiteruj po tej liście i wyświetl zawartość każdego z obiektów
+#
+# class Zawodnik:
+#     def __init__(self,id,imie,nazwisko,wzrost,masa):
+#         self.id_zawodnika=id
+#         self.imie=imie
+#         self.nazwisko=nazwisko
+#         self.wzrost=wzrost
+#         self.masa=masa
+#     def __str__(self):
+#         return f"id_zawodnika={self.id_zawodnika}, imie={self.imie}, nazwisko={self.nazwisko}, wzrost={self.wzrost}, masa={self.masa}"
+#
+# result=[]
+# for e in [e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]:
+#     result.append(  Zawodnik(e[0],e[1],e[2],e[3],e[4])  )
+#
+# print(result)
+# for r in result:
+#     print(r)
 
+
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def __init__(self,fn,ln):
+#         if fn is None or len(fn)==0:
+#             raise Exception('imię nie może być puste')
+#         if ln is None or len(ln)==0:
+#             raise Exception('nazwisko nie może być puste')
+#         self.first_name=fn
+#         self.last_name=ln
+#     def __str__(self):
+#         return f'first_name={self.first_name}, last_name={self.last_name}'
+#
+# p=Person('Andrzej','Klusiewicz')
+# p.first_name=None
+# p.last_name=None
+# print(p)
+#
+#
+# class Person:
+#     __first_name=None
+#     __last_name=None
+#
+#     def set_first_name(self,fn):
+#         if fn is None or len(fn)==0:
+#             raise Exception('imię nie może być puste')
+#         self.__first_name=fn
+#
+#     def set_last_name(self,ln):
+#         if ln is None or len(ln)==0:
+#             raise Exception('nazwisko nie może być puste')
+#         self.__last_name=ln
+#
+#     def __init__(self,fn,ln):
+#         self.set_first_name(fn)
+#         self.set_last_name(ln)
+#     def __str__(self):
+#         return f'first_name={self.__first_name}, last_name={self.__last_name}'
+#
+# p=Person('Andrzej','Klusiewicz')
+# p.set_first_name(None)
+# print(p)
+#
+
+#75. Stwórz klasę Samochod od nowa z polami marka, model, rejestracja oraz zaimplementowaną metodą __str__
+# i kontstruktorem sparametryzowanym.
+# Zadbaj o to by w klasie samochód wszystkie pola były prywatne, ale by istniały metody typu setter służące
+# do ustawiania wartości tych pól. Zadbaj o to by wszystkie odwołania wewnątrz klasy do pól były wykonywane
+# za pośrednictwem setterów. Zadbaj o to by nie dało się ustawić marki ani modelu o zerowej długości oraz
+# o to by długość rejestracji zawsze mieściła się w zakresie 7-8 znaków.
+# W przypadku podania niewłasciwych danych rzuć wyjątkiem z adekwatnym komunikatem.
