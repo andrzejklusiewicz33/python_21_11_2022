@@ -610,4 +610,12 @@
 # początkowego pod kątem poszukiwanej frazy.
 # Generator ma stopniowo zwracać nazwy plików zawierające poszukiwaną frazę wraz ze ścieżkami.
 
-
+szukane='oracle'
+import os
+for e in os.walk('c:\\'):
+    for k in e[1]:
+        if szukane.lower() in k.lower():
+            print(os.path.join(e[0],k))
+    for p in e[2]:
+        if szukane.lower() in p.lower():
+            print(os.path.join(e[0], p))
