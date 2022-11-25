@@ -30,3 +30,28 @@
 # inną funkcję oraz ciąg tekstowy do obróbki który następnie po obrobieniu przez funkcję podaną
 # jako argument zostanie wyświetlony na konsoli
 
+# def powieksz(tekst):
+#     return tekst.upper()
+#
+# def pomniejsz(tekst):
+#     return tekst.lower()
+#
+# def odpal(fun,tekst):
+#     print(fun(tekst))
+#
+# tekst='siała BABA mak'
+# odpal(powieksz,tekst)
+# odpal(pomniejsz,tekst)
+
+
+
+# def odpal(fun,tekst):
+#     print(fun(tekst))
+#
+# tekst='siała BABA mak'
+# odpal(lambda x:x.upper(),tekst)
+# odpal(lambda x:x.lower(),tekst)
+
+
+#79.Stworz funkcje ktora bedzie drukowala na konsoli dane otrzymane przez pierwszy argument
+# obrobione uprzednio przez wyrazenie lambda podane jako drugi argument.
