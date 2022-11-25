@@ -609,13 +609,114 @@
 # Generator ma przeszukać nazwy  wszystkich plików i katalogów w  podkatalogach zaczynając od katalogu
 # początkowego pod kątem poszukiwanej frazy.
 # Generator ma stopniowo zwracać nazwy plików zawierające poszukiwaną frazę wraz ze ścieżkami.
+#
+# def szukajka(katalog_startowy,szukane):
+#     result=[]
+#     import os
+#     for e in os.walk(katalog_startowy):
+#         for k in e[1]:
+#             if szukane.lower() in k.lower():
+#                 #print(os.path.join(e[0],k))
+#                 result.append(os.path.join(e[0],k))
+#         for p in e[2]:
+#             if szukane.lower() in p.lower():
+#                 #print(os.path.join(e[0], p))
+#                 result.append(os.path.join(e[0], p))
+#     return result
+#
+#
+# for e in szukajka('c:\\','oracle'):
+#     print(e)
 
-szukane='oracle'
-import os
-for e in os.walk('c:\\'):
-    for k in e[1]:
-        if szukane.lower() in k.lower():
-            print(os.path.join(e[0],k))
-    for p in e[2]:
-        if szukane.lower() in p.lower():
-            print(os.path.join(e[0], p))
+#
+# def szukajka(katalog_startowy,szukane):
+#     import os
+#     for e in os.walk(katalog_startowy):
+#         for k in e[1]:
+#             if szukane.lower() in k.lower():
+#                 yield os.path.join(e[0],k)
+#         for p in e[2]:
+#             if szukane.lower() in p.lower():
+#                 yield os.path.join(e[0], p)
+#
+#
+# for e in szukajka('c:\\','oracle'):
+#     print(e)
+#
+# import time
+# def funkcja(x):
+#     time.sleep(1)
+#     return x*10
+#
+# p=time.time()
+# for _ in range(10):
+#     for i in range(1,4):
+#         print(funkcja(i))
+# k=time.time()
+# print(f'czas trwania {k-p}s')
+
+#
+# import time
+# import functools
+#
+# @functools.lru_cache()
+# def funkcja(x):
+#     time.sleep(1)
+#     return x*10
+#
+# p=time.time()
+# for _ in range(10):
+#     for i in range(1,4):
+#         print(funkcja(i))
+# k=time.time()
+# print(f'czas trwania {k-p}s')
+
+
+#
+# import time
+# import functools
+#
+# @functools.lru_cache(maxsize=10)
+# def funkcja(x):
+#     time.sleep(1)
+#     return x*10
+#
+# p=time.time()
+# for _ in range(10):
+#     for i in range(1,4):
+#         print(funkcja(i))
+# k=time.time()
+# print(f'czas trwania {k-p}s')
+
+#
+# class Iterator:
+#     x=0
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         self.x+=1
+#         return self.x
+#
+# for e in Iterator():
+#     print(e)
+
+#
+#
+# class Iterator:
+#     x=0
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         self.x+=1
+#         return self.x
+#     def reset(self):
+#         self.x=0
+#
+# i=Iterator()
+# for e in range(1,4):
+#     print(next(i))
+# i.reset()
+# for e in range(1,4):
+#     print(next(i))
+
+#94. Stwórz iterator który bedzie podawał nieskończenie wiele kolejnych potęg liczby dwa 
