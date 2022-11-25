@@ -182,3 +182,21 @@
 
 #83. Stwórz funkcję która przyjmie przez argument mnożnik oraz elementy typu args.
 # Funkcja ma dla kazdego elementu typu args wyswietlic na konsoli wynik jego mnożenia przez mnożnik
+#
+# def funkcja(mnoznik,*elementy):
+#     for e in elementy:
+#         print(mnoznik*e)
+#
+# funkcja(10,1,2,3,4)
+#
+# def funkcja(**kwargs):
+#     for k in kwargs:
+#         print(k,kwargs[k])
+#
+# funkcja(param1='Andrzej',param2='Klusiewicz',costam='Mapet')
+
+#84. Stworz funkcje "config" ktora bedzie otrzymywala argumenty kwargs bedace ustawieniami.
+# Funkcja ta ma zapisac podane argumenty do pliku config.csv w 2 kolumnach
+# z czego pierwsza jest nazwa argumentu a druga jego wartoscia.
+# Jesli dane argument juz istnieje w pliku to trzeba bedzie
+# tylko zaktualizowac jego wartosc, jesli jeszcze go nie ma to trzeba go bedzie dodac do pliku.
