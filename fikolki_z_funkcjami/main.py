@@ -87,3 +87,43 @@
 # które mają zwracać otrzymane przez argument dane odpowiednio po powiększeniu i podzieleniu
 # tekstu na słowa. Wywołaj funkcję "parse" przekazując do niej ciąg tekstowy składający się z więcej
 # niż 1 słowa oraz funkcje "powieksz" i "podziel"
+
+# def powieksz(tekst):
+#     return tekst.upper()
+#
+# def podziel(tekst):
+#     return tekst.split()
+#
+# tekst="siała baba mak"
+#
+# def parse(tekst,*funcs):
+#     for f in funcs:
+#         tekst=f(tekst)
+#     print(tekst)
+
+#parse(tekst,lambda x:x.upper(),podziel)
+#parse(tekst,podziel,powieksz)#fuuuuuu
+
+#przerwa do 10:24
+
+# def nadfunkcja():
+#     def podfunkcja():
+#         print('dupa')
+#     podfunkcja()
+#
+# nadfunkcja()
+
+#
+# def nadfunkcja():
+#     def podfunkcja():
+#         print('dupa')
+#     return podfunkcja
+#
+# f=nadfunkcja()
+# f()
+
+#80. Stwórz funcję która będzie posiadała dwie funkcje wewnętrzne.
+# Jedna z tych funkcji ma powiekszac i zwracac otrzymany ciag znakow, druga pomniejszac i zwracac otrzymany ciąg znaków.
+# Funkcja zewnętrzna ma zwracać funkcję powiększającą gdy zostanie jej przez argument przekazana wartosc 1 i
+# funkcję pomniejszającą gdy otrzyma wartość 2. Odbierz obiekt funkcji wewnętrznej poprzez wywołanie funkcji zewnętrznej
+# xi zastosuj otrzymaną funkcję na ciągu tekstowym.
