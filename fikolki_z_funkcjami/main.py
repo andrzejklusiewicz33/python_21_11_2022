@@ -153,3 +153,12 @@
 #81. Stwórz funkcję która wydrukuje na konsoli sumę wartości przekazanych do niej jako *args
 
 #funkcja(1,2,3,4)
+#
+# def funkcja(*args):
+#     print(sum(args))
+#
+# funkcja(1,2,3,4,5)
+
+#82. Stwórz funkcję która przyjmie nieokreśloną liczbę elementów przez argument,
+# a następnie wypisze na konsoli ilość otrzymanych elementów.
+# Poniżej informacji o ilości otrzymanych elementów wyświetl w osobnych liniach każdy argument oraz jego typ.
