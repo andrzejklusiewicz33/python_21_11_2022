@@ -251,9 +251,132 @@
 #85. Stwórz funkcję której zadaniem będzie poczekanie 3 sekundy i wypisanie na konsoli komunikatu.
 # Dodaj dekorator który zliczy czas wykonywania tej funkcji. Pobranie aktualnego czasu to: "time.time()",
 # wstrzymanie na 3 sekundy: "time.sleep(3)"
+#
+# import time
+# def czekacz():
+#     time.sleep(3)
+#     print('już koniec :(')
+#
+# def dekorator(fun):
+#     def wewnetrzna():
+#         p=time.time()
+#         fun()
+#         k=time.time()
+#         print(f'czas trwania: {k-p}s')
+#     return wewnetrzna
+#
+#
+# udekorowana=dekorator(czekacz)
+# udekorowana()
 
 # import time
 # p=time.time()
 # time.sleep(1)
 # k=time.time()
 # print(f'{k-p}s')
+
+
+#
+# import time
+#
+# def dekorator(fun):
+#     def wewnetrzna():
+#         p=time.time()
+#         fun()
+#         k=time.time()
+#         print(f'czas trwania: {k-p}s')
+#     return wewnetrzna
+#
+# @dekorator()
+# def czekacz():
+#     time.sleep(3)
+#     print('już koniec :(')
+#
+# czekacz()
+
+
+#przerwa do 11:39
+#
+# def dekorator(fun):
+#     def wewnetrzna():
+#         print('przed')
+#         fun()
+#         print('po')
+#     return wewnetrzna
+# def jakas(x):
+#     for i in range(1,x+1):
+#         print(f'jakaś po raz {i}')
+#
+# f=dekorator(jakas)
+# f()
+
+#
+# def dekorator_1_arg(fun):
+#     def wewnetrzna(param):
+#         print('przed')
+#         fun(param)
+#         print('po')
+#     return wewnetrzna
+#
+# def dekorator_no_args(fun):
+#     def wewnetrzna():
+#         print('przed')
+#         fun()
+#         print('po')
+#     return wewnetrzna
+#
+#
+# def jakas(x):
+#     for i in range(1,x+1):
+#         print(f'jakaś po raz {i}')
+#
+# def inna():
+#     print('inna....')
+#
+# j=dekorator_1_arg(jakas)
+# j(10)
+#
+# i=dekorator_no_args(inna)
+# i()
+#
+
+# f=dekorator(inna)
+# f()
+# f=dekorator(jakas)
+# f(10)
+
+
+# def dekorator(fun):
+#     def wewnetrzna(*args,**kwargs):
+#         print('przed')
+#         fun(*args,**kwargs)
+#         print('po')
+#     return wewnetrzna
+#
+#
+# @dekorator
+# def jakas(x):
+#     for i in range(1,x+1):
+#         print(f'jakaś po raz {i}')
+# @dekorator
+# def inna():
+#     print('inna....')
+#
+# jakas(3)
+# inna()
+#
+# def dekorator(fun):
+#     def wewnetrzna(*args,**kwargs):
+#         print('przed')
+#         x=fun(*args,**kwargs)
+#         print('po')
+#         return x
+#     return wewnetrzna
+#
+# @dekorator
+# def funkcja():
+#     return 'nietoperz'
+#
+# print(funkcja())
+
+#86. Stwórz dekodator który będzie zawsze zaokrąglał do 2 miejsc po przecinku wynik zwracany przez dekordowaną funkcję
