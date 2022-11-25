@@ -457,3 +457,66 @@
 # @zaokralij(4)
 # def funkcja():
 #     return 10/3
+#
+# def zaokraglij(x):
+#     def dekorator(fun):
+#         def wewnetrzna(*args,**kwargs):
+#             return round(fun(*args,**kwargs),x)
+#         return wewnetrzna
+#     return dekorator
+#
+# import dekoratory
+# @dekoratory.zaokraglij(2)
+# def funkcja():
+#     return 10/3
+#
+# print(funkcja())
+
+#przerwa obiadowa do 13:07
+
+#yield 'ssss'
+#
+# import time
+# def daj_dane():
+#     result=[]
+#     for x in range(1,11):
+#         time.sleep(1)
+#         result.append(f'element numer {x}')
+#     return result
+#
+# for e in daj_dane():
+#     print(e)
+
+
+#import time
+# def daj_dane():
+#     for x in range(1,11):
+#         time.sleep(1)
+#         yield f'element numer {x}'
+# #
+# # for e in daj_dane():
+# #     print(e)
+# #
+# g=daj_dane()
+# while True:
+#     print(next(g))
+# print(next(g))
+# print(next(g))
+# print(next(g))
+
+
+# print(next(daj_dane()))
+# print(next(daj_dane()))
+# print(next(daj_dane()))
+
+# def generator():
+#     x=0
+#     while True:
+#         x+=1
+#         yield x
+#
+# for g in generator():
+#     print(g)
+
+#89. Stwórz generator który będzie podawał kolejne dni tygodnia (poniedzialek,wtorek etc).
+# Przeiteruj po zwracanych przez niego wartosciach i wyswietl je na konsoli
