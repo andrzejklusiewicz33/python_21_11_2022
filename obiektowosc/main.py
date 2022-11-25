@@ -458,3 +458,28 @@
 # Stwórz klasy "RestauracjaChinska", "RestauracjaWloska" i "RestaruracjaPolska". Wymuś posiadanie implementacji
 # metody abstrakcyjnej "serwuj_danie" we wszystkich tych klasach ale o różnej implementacji.
 # Powołaj do życia obiekty tych klas, a następnie na rzecz każdego z tych obiektów wywołaj funkcję serwuj_danie.
+#
+# from abc import ABC, abstractmethod
+# class Restauracja(ABC):
+#     @abstractmethod
+#     def serwuj_danie(self):
+#         pass
+#
+# class RestauracjaChinska(Restauracja):
+#     def serwuj_danie(self):
+#         print('niepokojącowe szczekanie z kuchni')
+#
+# class RestauracjaWloska(Restauracja):
+#     def serwuj_danie(self):
+#         print('pizza, makaron i co tam jeszcze')
+#
+# class RestauracjaPolska(Restauracja):
+#     def serwuj_danie(self):
+#         print('lorneta z meduzą')
+#
+# #rc=RestauracjaChinska()
+#
+# restauracje=[RestauracjaChinska(),RestauracjaWloska(),RestauracjaPolska()]
+# for r in restauracje:
+#     r.serwuj_danie()
+
