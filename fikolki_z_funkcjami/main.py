@@ -588,6 +588,26 @@
 # Korzystajac z generatora przeszukuj zwracane przez generator linie w poszukiwaniu poszukiwanej frazy.
 # W przypadku znalezienia poszukiwanej frazy w zwracanej przez generator linii chcemy wyswietlic ta linie i
 # przerwac przetwarzanie danych z generatora.
+# def czytacz(nazwa_pliku):
+#     plik=open(nazwa_pliku,encoding='utf-8')
+#     while True:
+#         linia=plik.readline()
+#         if not linia:
+#             break
+#         yield linia
+#
+# szukane='kutasy'
+# for linia in czytacz('tadzio.txt'):
+#     if szukane.lower() in linia.lower():
+#         print(linia)
+#         break
 
-lista=list(open('tadzio.txt',encoding='utf-8').readlines())
-print(len(lista))
+
+#przerwa do 14:20
+
+#93. Stwórz generator który będzie przyjmował przez argument nazwę katalogu początkowego oraz szukaną frazę.
+# Generator ma przeszukać nazwy  wszystkich plików i katalogów w  podkatalogach zaczynając od katalogu
+# początkowego pod kątem poszukiwanej frazy.
+# Generator ma stopniowo zwracać nazwy plików zawierające poszukiwaną frazę wraz ze ścieżkami.
+
+
