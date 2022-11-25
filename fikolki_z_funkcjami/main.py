@@ -200,3 +200,60 @@
 # z czego pierwsza jest nazwa argumentu a druga jego wartoscia.
 # Jesli dane argument juz istnieje w pliku to trzeba bedzie
 # tylko zaktualizowac jego wartosc, jesli jeszcze go nie ma to trzeba go bedzie dodac do pliku.
+
+#
+# def config(**kwargs):
+#     sl=dict()
+#     for e in [e.strip().split('=') for e in open('config.conf',encoding='utf-8')]:
+#         #print(e)
+#         sl[e[0]]=e[1]
+#     for k in kwargs:
+#         sl[k]=kwargs[k]
+#     with open('config.conf',encoding='utf-8',mode='w') as plik:
+#         for k in sl:
+#             plik.write(f'{k}={sl[k]}\n')
+#
+#
+# config(encoding='windows-1250',color='black')
+
+# @dekorator
+
+# def funkcja():
+#     print('coś!')
+#
+# def dekorator(fun):
+#     def wewnetrzna():
+#         print('przed')
+#         fun()
+#         print('po')
+#     return wewnetrzna
+#
+# f=dekorator(funkcja)
+# f()
+
+#
+# def dekorator(fun):
+#     def wewnetrzna():
+#         print('przed')
+#         fun()
+#         print('po')
+#     return wewnetrzna
+#
+# @dekorator
+# def funkcja():
+#     print('coś!')
+#
+# funkcja()
+#
+# f=dekorator(funkcja)
+# f()
+
+#85. Stwórz funkcję której zadaniem będzie poczekanie 3 sekundy i wypisanie na konsoli komunikatu.
+# Dodaj dekorator który zliczy czas wykonywania tej funkcji. Pobranie aktualnego czasu to: "time.time()",
+# wstrzymanie na 3 sekundy: "time.sleep(3)"
+
+# import time
+# p=time.time()
+# time.sleep(1)
+# k=time.time()
+# print(f'{k-p}s')
