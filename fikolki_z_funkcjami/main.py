@@ -410,3 +410,50 @@
 # from datetime import datetime
 # now = datetime.now()
 # print(now.strftime("%d/%m/%Y %H:%M:%S"))
+
+#@app.route('/')
+# import time
+# from datetime import datetime
+# def loguj(fun):
+#     def wewnetrzna(*args,**kwargs):
+#         result=fun(*args,**kwargs)
+#         now = datetime.now()
+#         with open('log.txt',encoding='utf-8',mode='a') as plik:
+#             plik.write(now.strftime("%d/%m/%Y %H:%M:%S")+';'+fun.__name__+";"+str(args)+str(kwargs)+";"+str(result)+"\n")
+#     return wewnetrzna
+#
+# @loguj
+# def testowa(x,y):
+#     time.sleep(1)
+#     print(f'x*y={x*y}')
+#     return x*y
+#
+# @loguj
+# def kolejna():
+#     return "koza"
+#
+# testowa(3,4)
+# kolejna()
+#app.route('/costam')
+#
+# def powtorz(x):
+#     def dekorator(fun):
+#         def wewnetrzna(*args,**kwargs):
+#             for i in range(1,x+1):
+#                 fun()
+#         return wewnetrzna
+#     return dekorator
+#
+# @powtorz(10)
+# def funkcja():
+#     print('funkcja!')
+#
+# funkcja()
+
+
+#88. Stwórz dekorator który będzie zwracał wynik dekorowanej funkccji zaokraglony do tylu miejsc
+#po przecinku ile podamy w argumencie dekoratora
+
+# @zaokralij(4)
+# def funkcja():
+#     return 10/3
