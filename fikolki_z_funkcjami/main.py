@@ -51,7 +51,39 @@
 # tekst='siała BABA mak'
 # odpal(lambda x:x.upper(),tekst)
 # odpal(lambda x:x.lower(),tekst)
+#
+# def funkcja(x,y):
+#     pass
+#
+# def funkcja(*args):
+#     for a in args:
+#         print(a)
+#
+# funkcja('koza',1,'costam')
 
+#
+# def opakowanie(fun,*args):
+#     fun(*args)
+#
+# def whatever(*args):
+#     for a in args:
+#         print(a)
+#
+# opakowanie(whatever,'siema','tu','mapet')
 
-#79.Stworz funkcje ktora bedzie drukowala na konsoli dane otrzymane przez pierwszy argument
-# obrobione uprzednio przez wyrazenie lambda podane jako drugi argument.
+# def whatever(**kwargs):
+#     for k in kwargs:
+#         print(k,kwargs[k])
+#
+# def opakowanie(fun,**kwargs):
+#     fun(**kwargs)
+#
+# opakowanie(whatever,arg1='coś',arg2='coś')
+#
+
+#79. Stwórz funkcję "parse" która będzie otrzymywała przez argumenty wartosc tekstową oraz *args funkcji.
+# Funkcja ta ma zastosować każdą z otrzymanych przez *args funkcji na wartości tekstowej
+# którą następnie wypisze na konsoli. Dodaj funkcję "powieksz" i "podziel"
+# które mają zwracać otrzymane przez argument dane odpowiednio po powiększeniu i podzieleniu
+# tekstu na słowa. Wywołaj funkcję "parse" przekazując do niej ciąg tekstowy składający się z więcej
+# niż 1 słowa oraz funkcje "powieksz" i "podziel"
