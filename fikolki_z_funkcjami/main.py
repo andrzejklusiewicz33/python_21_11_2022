@@ -162,3 +162,23 @@
 #82. Stwórz funkcję która przyjmie nieokreśloną liczbę elementów przez argument,
 # a następnie wypisze na konsoli ilość otrzymanych elementów.
 # Poniżej informacji o ilości otrzymanych elementów wyświetl w osobnych liniach każdy argument oraz jego typ.
+#
+# def funkcja(*params):
+#     print(f'ilość={len(params)}')
+#     for p in params:
+#         print(p)
+#
+#
+# funkcja('coś',1111,['whatever','lubie pierogi'])
+
+# def funkcja(x,*args):
+#     pass
+#
+#
+# def funkcja(*args,x):
+#     pass
+#
+# funkcja(1,2,3)
+
+#83. Stwórz funkcję która przyjmie przez argument mnożnik oraz elementy typu args.
+# Funkcja ma dla kazdego elementu typu args wyswietlic na konsoli wynik jego mnożenia przez mnożnik
