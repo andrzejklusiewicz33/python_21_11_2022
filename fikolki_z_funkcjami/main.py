@@ -126,4 +126,30 @@
 # Jedna z tych funkcji ma powiekszac i zwracac otrzymany ciag znakow, druga pomniejszac i zwracac otrzymany ciąg znaków.
 # Funkcja zewnętrzna ma zwracać funkcję powiększającą gdy zostanie jej przez argument przekazana wartosc 1 i
 # funkcję pomniejszającą gdy otrzyma wartość 2. Odbierz obiekt funkcji wewnętrznej poprzez wywołanie funkcji zewnętrznej
-# xi zastosuj otrzymaną funkcję na ciągu tekstowym.
+# i zastosuj otrzymaną funkcję na ciągu tekstowym.
+
+#
+# def zewnetrzna(numerek):
+#     def powieksz(tekst):
+#         return tekst.upper()
+#     def pomniejsz(tekst):
+#         return tekst.lower()
+#     if numerek==1:
+#         return powieksz
+#     elif numerek==2:
+#         return pomniejsz
+#     else:
+#         raise NotImplemented()
+#
+# tekst="siala BABA mak"
+# f=zewnetrzna(1)
+# print(f(tekst))
+# f=zewnetrzna(2)
+# print(f(tekst))
+
+#lista=[1,2,3]
+#print(sum(lista),max(lista),min(lista),sum(lista)/len(lista))
+
+#81. Stwórz funkcję która wydrukuje na konsoli sumę wartości przekazanych do niej jako *args
+
+#funkcja(1,2,3,4)
